@@ -356,12 +356,16 @@ body {
   font-size: 1em;
   font-weight: 700;
 }
-.header h2 {
+.header span {
   font-size: 0.8em;
 }
 .header a {
   color: white;
   text-decoration: none;
+}
+.header h3 {
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 /**
@@ -373,7 +377,11 @@ body {
 }
 
 .header {
-  background-color: #222222;
+  background-image: url(assets/images/banner-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 15em;
 }
 .header__nav {
   display: flex;
@@ -392,15 +400,47 @@ body {
 .header ul a:hover {
   text-decoration: underline;
 }
+.header__container__title {
+  padding-left: 0.7em;
+}
+.header__container__subtitle {
+  padding-left: 0.5em;
+}
+.header__container__content-box {
+  padding-left: 0.3em;
+  display: flex;
+  align-items: center;
+}
+.header__container__content-box__span {
+  padding-left: 2em;
+  margin-right: 1em;
+  margin-left: 1em;
+  border-top: 2px solid white;
+}
+.header__container__content-box__text {
+  font-size: 0.7em;
+  font-weight: bolder;
+}
 
-.hamburger {
-  color: red !important;
+.hidden-class {
+  display: none;
+}
+
+.header-background-js {
+  background-image: none !important;
+  padding-bottom: 0em !important;
 }
 
 header .primary-button {
   color: #222222;
   background-color: white;
-  padding: 0.5em;
+  padding: 0.5em 1em;
+}
+header .primary-button:hover {
+  color: white;
+  background-color: #222222;
+  text-decoration: none !important;
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=output.css.map */

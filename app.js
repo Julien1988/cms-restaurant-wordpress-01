@@ -14,6 +14,8 @@
   let getElement = document.querySelector(".header");
   let clickCount = 0;
   let getBurger = document.querySelector(".header__nav__burger-menu__icone");
+  let getElementToHide = document.querySelector(".header__container");
+  let getHeaderElement = document.querySelector(".header");
   document
     .querySelector(".header__nav__burger-menu")
     .addEventListener("click", () => {
@@ -21,7 +23,9 @@
         clickCount++;
         let ul = getElement.appendChild(document.createElement("ul"));
         ul.className = "header__burger-menu__liste";
+        getElementToHide.className = "header__container hidden-class";
         getBurger.className = "header__nav__burger-menu__icone fas fa-times";
+        getHeaderElement.className = "header header-background-js";
         for (let i = 0; i < arrayElement.length; i++) {
           let li = ul.appendChild(document.createElement("li"));
           li.className = "header__burger-menu__liste__item";
@@ -35,6 +39,8 @@
           ".header__burger-menu__liste"
         );
         getBurger.className = "header__nav__burger-menu__icone fas fa-bars";
+        getElementToHide.className = "header__container";
+        getHeaderElement.className = "header";
         removeElement.remove(removeElement);
         //getElement.removeChild(getElement.lastChild);
         return clickCount;

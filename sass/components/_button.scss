@@ -6,6 +6,12 @@ header {
   .primary-button {
     color: $text-color;
     background-color: $text-color-secondary;
-    padding: $gutter-smale;
+    padding: $gutter-smale $gutter;
+  }
+  .primary-button:hover {
+    color: $text-color-secondary;
+    background-color: $background-color;
+    text-decoration: none !important;
+    border: 1px solid $text-color-secondary;
   }
 }

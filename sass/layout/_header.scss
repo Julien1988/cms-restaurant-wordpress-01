@@ -3,7 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  background-color: $background-color;
+  background-image: url(assets/images/banner-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-bottom: 15em;
+
   &__nav {
     display: flex;
     align-items: baseline;
@@ -24,8 +30,41 @@
       text-decoration: underline;
     }
   }
+
+  &__container {
+    &__title {
+      padding-left: 0.7em;
+    }
+    &__subtitle {
+      padding-left: 0.5em;
+    }
+    &__content-box {
+      padding-left: 0.3em;
+      display: flex;
+      align-items: center;
+      &__span {
+        // min-width: 5em;
+        // min-height: 2em;
+        padding-left: $gutter-large;
+        margin-right: $gutter;
+        margin-left: $gutter;
+        border-top: 2px solid white;
+      }
+      &__text {
+        font-size: 0.7em;
+        font-weight: bolder;
+      }
+    }
+  }
 }
 
-.hamburger {
-  color: red !important;
+// class for JS - nav bar
+.hidden-class {
+  display: none;
+}
+
+// class for JS - nav bar background
+.header-background-js {
+  background-image: none !important;
+  padding-bottom: 0em !important;
 }

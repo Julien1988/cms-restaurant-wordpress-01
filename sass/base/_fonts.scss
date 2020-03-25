@@ -10,11 +10,16 @@
     font-size: 1em;
     font-weight: 700;
   }
-  h2 {
+  span {
     font-size: 0.8em;
   }
   a {
     color: $text-color-secondary;
     text-decoration: none;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 2em;
   }
 }
