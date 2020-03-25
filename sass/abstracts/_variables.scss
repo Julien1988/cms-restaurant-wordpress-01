@@ -23,3 +23,9 @@ $text-color-secondary: rgb(255, 255, 255) !default;
 /// Copy textbackground color
 /// @type Color
 $background-color: rgb(34, 34, 34) !default;
+
+/// Copy gutter
+/// @type Gutter
+$gutter: 1em !default;
+$gutter-smale: $gutter / 2;
+$gutter-large: $gutter * 2;

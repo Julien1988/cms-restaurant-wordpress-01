@@ -383,5 +383,24 @@ body {
 .header__nav__title {
   min-width: 60%;
 }
+.header ul {
+  list-style: none;
+}
+.header ul li {
+  margin-bottom: 2em;
+}
+.header ul a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  color: red !important;
+}
+
+header .primary-button {
+  color: #222222;
+  background-color: white;
+  padding: 0.5em;
+}
 
 /*# sourceMappingURL=output.css.map */

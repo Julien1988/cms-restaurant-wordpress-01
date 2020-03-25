@@ -12,4 +12,20 @@
       min-width: 60%;
     }
   }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: $gutter-large;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hamburger {
+  color: red !important;
 }
