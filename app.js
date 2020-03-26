@@ -66,6 +66,7 @@
   }
 
   let count = 0;
+  let count2 = count + 1;
 
   function resolveAfter() {
     return new Promise(changinColor => {
@@ -73,18 +74,15 @@
       //return count++;
     });
   }
-
   async function changinColor() {
     if (count < elementLength) {
       childrenElement[count].className =
         "main-front-page__section-03__container-mid__content-box js-action-class";
-      console.log(count);
-      // count2--;
-      // childrenElement[count2].className =
-      //   "main-front-page__section-03__container-mid__content-box";
+      console.log("count2", count2);
+      childrenElement[count2].className =
+        "main-front-page__section-03__container-mid__content-box";
       count = count + 1;
-      console.log(count);
-      console.log("test");
+      count2 = count - 1;
       await resolveAfter;
     } else {
       console.log("fin de la condition");
