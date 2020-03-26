@@ -53,13 +53,44 @@
     ".main-front-page__section-03__container-mid"
   );
   let elementLength = getElement.childElementCount;
+  let index;
 
   let childrenElement = getElement.children;
   console.log(childrenElement);
 
   let elementArray = [];
+
   for (let i = 0; i < elementLength; i++) {
     elementArray.push(childrenElement[i]);
+    index = i;
   }
-  console.log(elementArray);
+
+  let count = 0;
+
+  function resolveAfter() {
+    return new Promise(changinColor => {
+      setInterval(changinColor(count), 1000);
+      //return count++;
+    });
+  }
+
+  async function changinColor() {
+    if (count < elementLength) {
+      childrenElement[count].className =
+        "main-front-page__section-03__container-mid__content-box js-action-class";
+      console.log(count);
+      // count2--;
+      // childrenElement[count2].className =
+      //   "main-front-page__section-03__container-mid__content-box";
+      count = count + 1;
+      console.log(count);
+      console.log("test");
+      await resolveAfter;
+    } else {
+      console.log("fin de la condition");
+      return (count = 0);
+    }
+  }
+
+  setInterval(changinColor, 1000);
 })();
