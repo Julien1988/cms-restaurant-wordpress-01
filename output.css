@@ -448,8 +448,14 @@ header .primary-button:hover {
   border: 1px solid white;
 }
 
+.main-front-page {
+  background-color: #f1f1f1;
+}
 .main-front-page__section-top {
   background-color: #f1f1f1;
+}
+.main-front-page__section-top > :first-child {
+  padding-top: initial;
 }
 .main-front-page__section-top__container {
   background-color: #f7f7f7;
@@ -466,6 +472,44 @@ header .primary-button:hover {
   padding-left: 2em;
   padding-right: 2em;
   font-size: 0.8em;
+  padding-bottom: 2em;
+}
+.main-front-page__section-02 {
+  margin-top: 6em;
+  padding-bottom: 2em;
+}
+.main-front-page__section-02__image {
+  max-width: 100%;
+  height: 100%;
+}
+.main-front-page__section-02__container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.main-front-page__section-02__container__title {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: initial;
+}
+.main-front-page__section-02__container__subtitle {
+  margin-top: initial;
+  margin-bottom: initial;
+  text-transform: uppercase;
+}
+.main-front-page__section-02__container__sub-subtitle {
+  margin-top: initial;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+.main-front-page__section-02__container__text {
+  font-size: 0.5em;
+  line-height: 3em;
+}
+.main-front-page__section-02__container__sub-subtitle-02 {
+  margin-bottom: initial;
+}
+.main-front-page__section-02__container__title-02 {
+  margin-top: initial;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -2,7 +2,11 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .main-front-page {
+  background-color: $background-color-secondary;
   &__section-top {
+    > :first-child {
+      padding-top: initial;
+    }
     background-color: $background-color-secondary;
     // transform: translate(0, 20em);
 
@@ -22,6 +26,50 @@
         padding-left: $gutter-large;
         padding-right: $gutter-large;
         font-size: 0.8em;
+        padding-bottom: $gutter-large;
+      }
+    }
+  }
+
+  &__section-02 {
+    margin-top: $gutter-large * 3;
+    padding-bottom: $gutter-large;
+
+    &__image {
+      max-width: 100%;
+      height: 100%;
+    }
+    &__container {
+      padding-left: $gutter;
+      padding-right: $gutter;
+      &__title {
+        font-size: 1.5em;
+        font-weight: 400;
+        margin-bottom: initial;
+      }
+      &__subtitle {
+        margin-top: initial;
+        margin-bottom: initial;
+        text-transform: uppercase;
+      }
+
+      &__sub-subtitle {
+        margin-top: initial;
+        font-size: 0.5em;
+        text-transform: uppercase;
+      }
+
+      &__text {
+        font-size: 0.5em;
+        line-height: 3em;
+      }
+
+      &__sub-subtitle-02 {
+        margin-bottom: initial;
+      }
+
+      &__title-02 {
+        margin-top: initial;
       }
     }
   }
