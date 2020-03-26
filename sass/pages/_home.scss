@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.main-front-page {
+  &__section-top {
+    background-color: $background-color-secondary;
+    // transform: translate(0, 20em);
+
+    &__container {
+      background-color: $background-color-third;
+      text-align: center;
+      padding-top: $gutter-large;
+
+      &__title {
+        padding-left: $gutter;
+        padding-right: $gutter;
+        font-size: 1.2em;
+        text-transform: uppercase;
+      }
+
+      &__text {
+        padding-left: $gutter-large;
+        padding-right: $gutter-large;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

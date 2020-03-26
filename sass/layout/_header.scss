@@ -4,11 +4,11 @@
 
 .header {
   background-image: url(assets/images/banner-top.jpg);
-  background-repeat: no-repeat;
+
   background-size: cover;
   background-position: center;
 
-  padding-bottom: 15em;
+  // padding-bottom: 15em;
 
   &__nav {
     display: flex;
@@ -54,6 +54,14 @@
         font-size: 0.7em;
         font-weight: bolder;
       }
+    }
+
+    &__background-box {
+      background-color: $background-color-third;
+      margin-top: 15em;
+      padding-top: 2em;
+      border-top-left-radius: 3em;
+      border-top-right-radius: 3em;
     }
   }
 }

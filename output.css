@@ -378,10 +378,8 @@ body {
 
 .header {
   background-image: url(assets/images/banner-top.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-bottom: 15em;
 }
 .header__nav {
   display: flex;
@@ -421,6 +419,13 @@ body {
   font-size: 0.7em;
   font-weight: bolder;
 }
+.header__container__background-box {
+  background-color: #f7f7f7;
+  margin-top: 15em;
+  padding-top: 2em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
 
 .hidden-class {
   display: none;
@@ -441,6 +446,26 @@ header .primary-button:hover {
   background-color: #222222;
   text-decoration: none !important;
   border: 1px solid white;
+}
+
+.main-front-page__section-top {
+  background-color: #f1f1f1;
+}
+.main-front-page__section-top__container {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 2em;
+}
+.main-front-page__section-top__container__title {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.main-front-page__section-top__container__text {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=output.css.map */
