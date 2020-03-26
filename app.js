@@ -47,3 +47,19 @@
       }
     });
 })();
+
+(() => {
+  let getElement = document.querySelector(
+    ".main-front-page__section-03__container-mid"
+  );
+  let elementLength = getElement.childElementCount;
+
+  let childrenElement = getElement.children;
+  console.log(childrenElement);
+
+  let elementArray = [];
+  for (let i = 0; i < elementLength; i++) {
+    elementArray.push(childrenElement[i]);
+  }
+  console.log(elementArray);
+})();

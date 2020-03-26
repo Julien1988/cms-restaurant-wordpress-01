@@ -511,5 +511,52 @@ header .primary-button:hover {
 .main-front-page__section-02__container__title-02 {
   margin-top: initial;
 }
+.main-front-page__section-03 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.main-front-page__section-03__container-top {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.main-front-page__section-03__container-top__title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: initial;
+  margin-bottom: initial;
+}
+.main-front-page__section-03__container-top__subtitle {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  margin-top: initial;
+  margin-bottom: initial;
+}
+.main-front-page__section-03__container-mid {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+  box-shadow: 1px 15px 10px lightgray;
+  border-radius: 2em;
+}
+.main-front-page__section-03__container-mid > :first-child {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background-color: initial;
+  background-color: black;
+  color: white;
+}
+.main-front-page__section-03__container-mid__content-box {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.main-front-page__section-03__container-mid p {
+  font-size: 0.8em;
+}
+.main-front-page__section-03__container-mid .js-action-class {
+  background-color: wheat !important;
+}
 
 /*# sourceMappingURL=output.css.map */
