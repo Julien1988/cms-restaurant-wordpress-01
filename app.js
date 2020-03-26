@@ -48,6 +48,8 @@
     });
 })();
 
+// Animation of the focus JS
+
 (() => {
   let getElement = document.querySelector(
     ".main-front-page__section-03__container-mid"
@@ -56,10 +58,14 @@
 
   let childrenElement = getElement.children;
   //console.log(childrenElement);
-  let count = 0;
+  let count = 1;
   let count2 = count + 1;
   let endOfAnimation = 0;
   let elementArray = [];
+  // Animation repeat
+  const TimeOfAnimation = 50;
+  // Choice where the animation start
+  const StartOfAnimation = 1;
 
   for (let i = 0; i < elementLength; i++) {
     elementArray.push(childrenElement[i]);
@@ -83,9 +89,11 @@
       await resolveAfter;
     } else {
       //console.log("fin de la condition");
-      if (endOfAnimation < 0) {
+      if (endOfAnimation < TimeOfAnimation) {
         //console.log(endOfAnimation);
-        return (count = 0), (endOfAnimation = endOfAnimation + 1);
+        return (
+          (count = StartOfAnimation), (endOfAnimation = endOfAnimation + 1)
+        );
       } else {
         console.log("end of animation");
 
