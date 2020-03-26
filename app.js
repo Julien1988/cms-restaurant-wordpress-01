@@ -83,11 +83,15 @@
       await resolveAfter;
     } else {
       //console.log("fin de la condition");
-      if (endOfAnimation < 50) {
-        console.log(endOfAnimation);
+      if (endOfAnimation < 0) {
+        //console.log(endOfAnimation);
         return (count = 0), (endOfAnimation = endOfAnimation + 1);
       } else {
         console.log("end of animation");
+
+        elementLength = elementLength - 1;
+        childrenElement[elementLength].className =
+          "main-front-page__section-03__container-mid__content-box";
         clearInterval(stopAnimation);
       }
     }
