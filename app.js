@@ -53,11 +53,12 @@
     ".main-front-page__section-03__container-mid"
   );
   let elementLength = getElement.childElementCount;
-  let index;
 
   let childrenElement = getElement.children;
-  console.log(childrenElement);
-
+  //console.log(childrenElement);
+  let count = 0;
+  let count2 = count + 1;
+  let endOfAnimation = 0;
   let elementArray = [];
 
   for (let i = 0; i < elementLength; i++) {
@@ -65,30 +66,32 @@
     index = i;
   }
 
-  let count = 0;
-  let count2 = count + 1;
-
   function resolveAfter() {
     return new Promise(changinColor => {
       setInterval(changinColor(count), 1000);
-      //return count++;
     });
   }
   async function changinColor() {
     if (count < elementLength) {
       childrenElement[count].className =
         "main-front-page__section-03__container-mid__content-box js-action-class";
-      console.log("count2", count2);
+      //console.log("count2", count2);
       childrenElement[count2].className =
         "main-front-page__section-03__container-mid__content-box";
       count = count + 1;
       count2 = count - 1;
       await resolveAfter;
     } else {
-      console.log("fin de la condition");
-      return (count = 0);
+      //console.log("fin de la condition");
+      if (endOfAnimation < 50) {
+        console.log(endOfAnimation);
+        return (count = 0), (endOfAnimation = endOfAnimation + 1);
+      } else {
+        console.log("end of animation");
+        clearInterval(stopAnimation);
+      }
     }
   }
 
-  setInterval(changinColor, 1000);
+  let stopAnimation = setInterval(changinColor, 1000);
 })();
