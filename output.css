@@ -368,6 +368,19 @@ body {
   font-size: 2em;
 }
 
+.main-front-page section h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: initial;
+  margin-bottom: initial;
+}
+.main-front-page section h2 {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  margin-top: initial;
+  margin-bottom: initial;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -448,12 +461,9 @@ header .primary-button:hover {
   border: 1px solid white;
 }
 
-main .link-button-order :hover {
-  background-color: black !important;
-  color: white;
-  border-color: white !important;
-}
 main .link-button-order .button-order {
+  padding-left: 3em;
+  padding-right: 3em;
   padding-top: 0.6666666667em;
   padding-bottom: 0.6666666667em;
   background-color: #f1f1f1;
@@ -461,6 +471,15 @@ main .link-button-order .button-order {
   font-weight: 700;
   text-transform: uppercase;
   border: 1px solid #222222;
+}
+main .link-button-order .button-view-all {
+  background-color: #222222;
+  color: #f1f1f1;
+}
+main .link-button-view-all :hover {
+  background-color: white !important;
+  color: black;
+  border-color: black !important;
 }
 
 .main-front-page {
@@ -535,17 +554,8 @@ main .link-button-order .button-order {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.main-front-page__section-03__container-top__title {
-  font-size: 1.5em;
-  font-weight: 500;
-  margin-top: initial;
-  margin-bottom: initial;
-}
 .main-front-page__section-03__container-top__subtitle {
-  text-transform: uppercase;
-  font-size: 1.9em;
-  margin-top: initial;
-  margin-bottom: initial;
+  font-size: 1.5em !important;
 }
 .main-front-page__section-03__container-mid {
   text-align: center;
@@ -622,10 +632,15 @@ main .link-button-order .button-order {
 .main-front-page__section-03__container-bot__article__link__text {
   font-size: 0.7em;
 }
-.main-front-page__section-03__container-bot__article__link__button,
-.main-front-page__section-03__container-bot__article__link .button-order {
-  padding-left: 3em;
-  padding-right: 3em;
+.main-front-page__section-03__container-bot .link-button-view-all button {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+.main-front-page__section-04 {
+  background-image: url(assets/images/burger-party.png);
+}
+.main-front-page__section-04__title, .main-front-page__section-04__subtitle {
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */
