@@ -558,5 +558,33 @@ header .primary-button:hover {
 .main-front-page__section-03__container-mid .js-action-class {
   background-color: wheat !important;
 }
+.main-front-page__section-03__container-bot {
+  text-align: center;
+}
+.main-front-page__section-03__container-bot__article__grid-layout {
+  display: grid;
+  grid-template-columns: repeat(14, 0.95em);
+  grid-template-rows: repeat(10, 1em);
+}
+.main-front-page__section-03__container-bot__article__grid-layout img {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+.main-front-page__section-03__container-bot__article__grid-layout span {
+  grid-column-start: 12;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-radius: 15em;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=output.css.map */

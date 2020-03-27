@@ -131,5 +131,40 @@
         background-color: wheat !important;
       }
     }
+
+    &__container-bot {
+      text-align: center;
+
+      &__article {
+        &__grid-layout {
+          display: grid;
+          grid-template-columns: repeat(14, 0.95em);
+          grid-template-rows: repeat(10, 1em);
+
+          img {
+            grid-column-start: 4;
+            grid-column-end: 10;
+            grid-row-start: 3;
+            grid-row-end: 7;
+          }
+
+          span {
+            grid-column-start: 12;
+            grid-column-end: 14;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            border-radius: 15em;
+            font-size: 0.7em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
   }
 }
