@@ -15,3 +15,22 @@ header {
     border: 1px solid $text-color-secondary;
   }
 }
+
+main {
+  .link-button-order {
+    :hover {
+      background-color: black !important;
+      color: white;
+      border-color: white !important;
+    }
+    .button-order {
+      padding-top: $gutter / 1.5;
+      padding-bottom: $gutter / 1.5;
+      background-color: $background-color-secondary;
+      font-size: 0.7em;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid $background-color;
+    }
+  }
+}
