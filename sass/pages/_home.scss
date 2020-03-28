@@ -190,9 +190,36 @@
 
   &__section-04 {
     background-image: url(assets/images/burger-party.png);
+    //background-size: cover;
+    background-position: center;
+    &__title {
+      padding-top: $gutter-large;
+    }
     &__title,
     &__subtitle {
+      background-color: rgba(241, 241, 241, 0.9);
       text-align: center;
+    }
+    &__subtitle {
+      padding-bottom: $gutter;
+    }
+
+    &__article {
+      &__image {
+        max-width: 100%;
+        height: 100%;
+        background-color: $background-color-secondary;
+      }
+
+      &__container {
+        background-color: $background-color-secondary;
+
+        &__link {
+          &__title {
+            margin-top: inherit;
+          }
+        }
+      }
     }
   }
 }
