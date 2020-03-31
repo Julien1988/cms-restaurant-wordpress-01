@@ -650,16 +650,43 @@ main .link-button-view-all :hover {
 .main-front-page__section-04__subtitle {
   padding-bottom: 1em;
 }
-.main-front-page__section-04__article__image {
+.main-front-page__section-04__article {
+  padding-bottom: 5em;
+  background-color: rgba(241, 241, 241, 0.9);
+}
+.main-front-page__section-04__article__container-img {
+  background-color: #f1f1f1;
+}
+.main-front-page__section-04__article__container-img__image {
   max-width: 100%;
   height: 100%;
-  background-color: #f1f1f1;
 }
 .main-front-page__section-04__article__container {
   background-color: #f1f1f1;
 }
+.main-front-page__section-04__article__container__link {
+  text-align: center;
+  text-decoration: none;
+  color: #222222;
+}
 .main-front-page__section-04__article__container__link__title {
   margin-top: inherit;
+  font-weight: 500;
+}
+.main-front-page__section-04__article__container__link__subtitle {
+  font-size: 1.5em;
+}
+.main-front-page__section-04__article__container__link__button {
+  margin-left: 6em;
+  margin-bottom: 4em;
+}
+.main-front-page__section-04__article__container__text {
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 0.7em;
+  line-height: 2em;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=output.css.map */
