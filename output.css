@@ -520,6 +520,30 @@ body {
 .footer__section-02__container__list__item .linkedin-icone {
   background-color: #0073af;
 }
+.footer__section-02__container__subtitle {
+  text-align: left;
+  padding-left: 1em;
+  margin-bottom: initial;
+}
+.footer__section-02__container__content-box {
+  font-size: 0.8em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.footer__section-02__container__content-box i {
+  margin-right: 0.5em;
+}
+.footer__section-02__container__content-box span {
+  display: flex;
+  flex-grow: 2;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  border-top: 2px solid white;
+  height: 0.3em;
+}
 
 header .primary-button {
   color: #222222;
