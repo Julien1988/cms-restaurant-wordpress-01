@@ -335,9 +335,12 @@
   &__section-06 {
     text-align: center;
     padding-top: $gutter-large;
+    background-color: background-color-third;
 
     &__article {
+      background-color: $background-color-secondary;
       padding-bottom: $gutter-large;
+      margin-bottom: $gutter-large;
       &__link {
         &__image {
           max-width: 100%;

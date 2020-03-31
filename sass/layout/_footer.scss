@@ -1,3 +1,50 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+  //button-order
+
+  &__section-01 {
+    color: $text-color-secondary;
+    margin-top: -2em;
+
+    &__image {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 5%,
+        rgba(40, 40, 40, 1) 62%
+      );
+    }
+
+    &__form {
+      &__title {
+        text-transform: uppercase;
+        padding-left: $gutter-smale;
+      }
+      input {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        width: 90%;
+        margin-left: $gutter-smale;
+        margin-right: $gutter-smale;
+        font-size: 0.7em;
+      }
+
+      &__box-button {
+        text-align: center;
+        padding-top: $gutter;
+        button {
+          text-transform: uppercase;
+          background-color: $text-color-secondary;
+          border: none;
+          font-weight: 700;
+          font-size: 0.7em;
+          padding: $gutter $gutter-large;
+          border-radius: 0.2em;
+        }
+      }
+    }
+  }
+}

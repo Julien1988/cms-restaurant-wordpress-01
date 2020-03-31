@@ -449,6 +449,40 @@ body {
   padding-bottom: 0em !important;
 }
 
+.footer__section-01 {
+  color: white;
+  margin-top: -2em;
+}
+.footer__section-01__image {
+  background: white;
+  background: linear-gradient(180deg, white 5%, #282828 62%);
+}
+.footer__section-01__form__title {
+  text-transform: uppercase;
+  padding-left: 0.5em;
+}
+.footer__section-01__form input {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  width: 90%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.7em;
+}
+.footer__section-01__form__box-button {
+  text-align: center;
+  padding-top: 1em;
+}
+.footer__section-01__form__box-button button {
+  text-transform: uppercase;
+  background-color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 0.7em;
+  padding: 1em 2em;
+  border-radius: 0.2em;
+}
+
 header .primary-button {
   color: #222222;
   background-color: white;
@@ -749,9 +783,12 @@ main .link-button-view-all :hover {
 .main-front-page__section-06 {
   text-align: center;
   padding-top: 2em;
+  background-color: background-color-third;
 }
 .main-front-page__section-06__article {
+  background-color: #f1f1f1;
   padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 .main-front-page__section-06__article__link__image {
   max-width: 100%;
