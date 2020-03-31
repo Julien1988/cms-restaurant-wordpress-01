@@ -746,5 +746,47 @@ main .link-button-view-all :hover {
 .main-front-page__section-banner__image-bottom {
   transform: rotate(180deg);
 }
+.main-front-page__section-06 {
+  text-align: center;
+  padding-top: 2em;
+}
+.main-front-page__section-06__article {
+  padding-bottom: 2em;
+}
+.main-front-page__section-06__article__link__image {
+  max-width: 100%;
+  height: auto;
+}
+.main-front-page__section-06__article__content-box {
+  display: flex;
+  align-items: baseline;
+  margin-left: 1em;
+  color: #5a5a5a;
+}
+.main-front-page__section-06__article__content-box i {
+  padding-right: 0.5em;
+}
+.main-front-page__section-06__article__content-box__link {
+  text-decoration: none;
+}
+.main-front-page__section-06__article__content-box__link__title {
+  color: #222222;
+}
+.main-front-page__section-06__article__content-box__link span {
+  padding-right: 1em;
+}
+.main-front-page__section-06__article__content-box__link__button {
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+.main-front-page__section-06__article__content-box__text {
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.7em;
+  line-height: 2em;
+}
 
 /*# sourceMappingURL=output.css.map */

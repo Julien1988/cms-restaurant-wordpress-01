@@ -331,4 +331,54 @@
       transform: rotate(180deg);
     }
   }
+
+  &__section-06 {
+    text-align: center;
+    padding-top: $gutter-large;
+
+    &__article {
+      padding-bottom: $gutter-large;
+      &__link {
+        &__image {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &__content-box {
+        display: flex;
+        align-items: baseline;
+        margin-left: $gutter;
+        color: #5a5a5a;
+
+        i {
+          padding-right: $gutter-smale;
+        }
+        &__link {
+          text-decoration: none;
+          &__title {
+            color: $text-color;
+          }
+
+          span {
+            padding-right: $gutter;
+          }
+
+          &__button {
+            color: $text-color;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.7em;
+          }
+        }
+        &__text {
+          text-align: justify;
+          padding-left: $gutter;
+          padding-right: $gutter;
+          font-size: 0.7em;
+          line-height: 2em;
+        }
+      }
+    }
+  }
 }
