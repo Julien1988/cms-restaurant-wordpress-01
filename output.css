@@ -522,7 +522,7 @@ body {
 }
 .footer__section-02__container__subtitle {
   text-align: left;
-  padding-left: 1em;
+  padding-left: 0.5em;
   margin-bottom: initial;
 }
 .footer__section-02__container__content-box {
@@ -543,6 +543,25 @@ body {
   margin-right: 1.5em;
   border-top: 2px solid white;
   height: 0.3em;
+}
+.footer__section-02__container__content-box a {
+  color: white;
+  text-decoration: none;
+}
+.footer__section-02__container__content-box-contact {
+  justify-content: start;
+}
+.footer__section-02__container__content-box-contact :first-child {
+  margin-top: 1em;
+}
+.footer__section-02__container__content-box-contact .fa-phone {
+  transform: rotate(90deg);
+}
+.footer__section-02__container__content-box-contact i {
+  margin-right: 0.5em;
+}
+.footer__section-02__container__content-box-contact p {
+  text-align: left;
 }
 
 header .primary-button {
