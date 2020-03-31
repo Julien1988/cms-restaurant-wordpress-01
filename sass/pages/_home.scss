@@ -252,4 +252,53 @@
       }
     }
   }
+  &__section-05 {
+    padding-top: $gutter-large;
+    &__container {
+      text-align: center;
+
+      &__subtitle {
+        padding-left: $gutter;
+        padding-right: $gutter;
+      }
+    }
+
+    &__container-image {
+      padding-top: $gutter;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__image {
+        width: 60%;
+        //height: 50%;
+        padding-bottom: $gutter;
+      }
+    }
+
+    &__container {
+      &__text {
+        text-align: center;
+        padding-left: $gutter-large;
+        padding-right: $gutter-large;
+        font-size: 0.7em;
+        line-height: 2em;
+        font-weight: 500;
+        padding-bottom: $gutter-large;
+      }
+
+      &__link {
+        :hover {
+          border: 1px solid black;
+        }
+        &__button {
+          padding-top: $gutter-smale;
+          padding-bottom: $gutter-smale;
+          padding-left: $gutter-smale;
+          padding-right: $gutter-smale;
+          border: none;
+        }
+      }
+    }
+  }
 }
