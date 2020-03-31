@@ -563,6 +563,23 @@ body {
 .footer__section-02__container__content-box-contact p {
   text-align: left;
 }
+.footer__section-02__container img {
+  width: 25%;
+  margin-right: 0.5em;
+}
+.footer__section-03 {
+  color: white;
+  padding-bottom: 2em;
+}
+.footer__section-03__container {
+  border-top: 1px solid #5e5d5d;
+  margin: 2em;
+}
+.footer__section-03__container p {
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 header .primary-button {
   color: #222222;

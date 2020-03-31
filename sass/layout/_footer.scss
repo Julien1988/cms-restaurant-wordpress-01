@@ -145,6 +145,26 @@
           text-align: left;
         }
       }
+
+      img {
+        width: 25%;
+        margin-right: $gutter-smale;
+      }
+    }
+  }
+  &__section-03 {
+    color: $text-color-secondary;
+    padding-bottom: $gutter-large;
+
+    &__container {
+      border-top: 1px solid rgb(94, 93, 93);
+      margin: $gutter-large;
+
+      p {
+        font-size: 0.8em;
+        padding-left: $gutter;
+        padding-right: $gutter;
+      }
     }
   }
 }
