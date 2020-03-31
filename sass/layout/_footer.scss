@@ -47,4 +47,52 @@
       }
     }
   }
+
+  &__section-02 {
+    color: $text-color-secondary;
+    text-align: center;
+
+    &__container {
+      &__text {
+        text-align: left;
+        padding-left: $gutter * 1.5;
+      }
+
+      &__list {
+        padding-left: initial;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        &__item {
+          //margin: 3em;
+          margin-right: $gutter-smale;
+          a {
+            display: block;
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            border-radius: 50%;
+            width: 2em;
+            height: 2em;
+          }
+
+          .facebook-icone {
+            background-color: #395694;
+          }
+
+          .twitter-icone {
+            background-color: #52a7e8;
+          }
+
+          .instagram-icone {
+            background-color: #dd3f5d;
+          }
+          .linkedin-icone {
+            background-color: #0073af;
+          }
+        }
+      }
+    }
+  }
 }

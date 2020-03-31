@@ -482,6 +482,44 @@ body {
   padding: 1em 2em;
   border-radius: 0.2em;
 }
+.footer__section-02 {
+  color: white;
+  text-align: center;
+}
+.footer__section-02__container__text {
+  text-align: left;
+  padding-left: 1.5em;
+}
+.footer__section-02__container__list {
+  padding-left: initial;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer__section-02__container__list__item {
+  margin-right: 0.5em;
+}
+.footer__section-02__container__list__item a {
+  display: block;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+.footer__section-02__container__list__item .facebook-icone {
+  background-color: #395694;
+}
+.footer__section-02__container__list__item .twitter-icone {
+  background-color: #52a7e8;
+}
+.footer__section-02__container__list__item .instagram-icone {
+  background-color: #dd3f5d;
+}
+.footer__section-02__container__list__item .linkedin-icone {
+  background-color: #0073af;
+}
 
 header .primary-button {
   color: #222222;
