@@ -727,5 +727,24 @@ main .link-button-view-all :hover {
   padding-right: 0.5em;
   border: none;
 }
+.main-front-page__section-banner__container {
+  background-color: #282828;
+  text-align: center;
+  margin-top: -0.5em;
+  margin-bottom: -0.1em;
+}
+.main-front-page__section-banner__container__content-box p {
+  color: white;
+  margin: initial;
+}
+.main-front-page__section-banner__container__content-box__number {
+  font-size: 2em;
+}
+.main-front-page__section-banner__container__content-box__text {
+  padding-bottom: 2em;
+}
+.main-front-page__section-banner__image-bottom {
+  transform: rotate(180deg);
+}
 
 /*# sourceMappingURL=output.css.map */

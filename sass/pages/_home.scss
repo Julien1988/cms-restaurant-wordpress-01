@@ -301,4 +301,34 @@
       }
     }
   }
+
+  &__section-banner {
+    &__image {
+    }
+
+    &__container {
+      background-color: $background-banner-color;
+      text-align: center;
+      margin-top: -0.5em;
+      margin-bottom: -0.1em;
+
+      &__content-box {
+        p {
+          color: $text-color-secondary;
+          margin: initial;
+        }
+        &__number {
+          font-size: 2em;
+        }
+
+        &__text {
+          padding-bottom: $gutter-large;
+        }
+      }
+    }
+
+    &__image-bottom {
+      transform: rotate(180deg);
+    }
+  }
 }
