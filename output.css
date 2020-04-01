@@ -381,6 +381,13 @@ body {
   margin-bottom: initial;
 }
 
+.main-post-type h3 {
+  font-weight: 400;
+}
+.main-post-type h4 {
+  font-size: 1.5em;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -921,6 +928,40 @@ main .link-button-view-all :hover {
   padding-left: 1em;
   padding-right: 1em;
   font-size: 0.7em;
+  line-height: 2em;
+}
+
+.main-post-type {
+  background-color: #f7f7f7;
+  padding-bottom: 4em;
+}
+.main-post-type__image {
+  transform: rotate(180deg) translateY(0.6em);
+}
+.main-post-type__section-01 {
+  text-align: center;
+  margin-top: -1em;
+}
+.main-post-type__section-01__title {
+  background-color: white;
+}
+.main-post-type__section-01__subtitle {
+  background-color: white;
+}
+.main-post-type__section-01__container {
+  background-color: white;
+  margin-bottom: 4em;
+}
+.main-post-type__section-01__container img {
+  max-width: 100%;
+  height: auto;
+}
+.main-post-type__section-01__container__content-box {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.main-post-type__section-01__container__content-box__text {
+  text-align: left;
   line-height: 2em;
 }
 
