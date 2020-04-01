@@ -968,5 +968,35 @@ main .link-button-view-all :hover {
   text-align: center;
   padding-bottom: 2em;
 }
+.main-post-type__section-03 {
+  text-align: center;
+}
+.main-post-type__section-03 img {
+  max-width: 100%;
+  height: auto;
+}
+.main-post-type__section-03 form div {
+  text-align: left;
+  padding: 1em;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+.main-post-type__section-03 form div label {
+  margin-bottom: 0.5em;
+}
+.main-post-type__section-03 form div input {
+  border: none;
+  padding: 1em;
+}
+.main-post-type__section-03 form div select {
+  border: none;
+  padding: 1em;
+  background-color: white;
+}
+.main-post-type__section-03 form button {
+  background-color: #222222 !important;
+  color: white;
+}
 
 /*# sourceMappingURL=output.css.map */
