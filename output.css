@@ -998,5 +998,21 @@ main .link-button-view-all :hover {
   background-color: #222222 !important;
   color: white;
 }
+.main-post-type__section-04 {
+  text-align: center;
+  padding-bottom: 2em;
+}
+.main-post-type__section-04__container__link :hover {
+  color: black !important;
+  background-color: white !important;
+}
+.main-post-type__section-04__container__link button {
+  font-weight: 800;
+  padding: 1em;
+  border: 1px solid black;
+}
+.main-post-type__section-04 .hide-on-mobile-view {
+  display: none;
+}
 
 /*# sourceMappingURL=output.css.map */

@@ -76,5 +76,27 @@
       }
     }
   }
+
+  &__section-04 {
+    text-align: center;
+    padding-bottom: $gutter-large;
+
+    &__container {
+      &__link {
+        :hover {
+          color: black !important;
+          background-color: white !important;
+        }
+        button {
+          font-weight: 800;
+          padding: $gutter;
+          border: 1px solid black;
+        }
+      }
+    }
+    .hide-on-mobile-view {
+      display: none;
+    }
+  }
   padding-bottom: $gutter-large * 2;
 }
