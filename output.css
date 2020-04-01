@@ -515,6 +515,9 @@ body {
   width: 2em;
   height: 2em;
 }
+.footer__section-02__container__list__item a img {
+  margin: initial;
+}
 .footer__section-02__container__list__item .facebook-icone {
   background-color: #395694;
 }
