@@ -33,5 +33,10 @@
       }
     }
   }
+
+  &__section-02 {
+    text-align: center;
+    padding-bottom: $gutter-large;
+  }
   padding-bottom: $gutter-large * 2;
 }

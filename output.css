@@ -964,5 +964,9 @@ main .link-button-view-all :hover {
   text-align: left;
   line-height: 2em;
 }
+.main-post-type__section-02 {
+  text-align: center;
+  padding-bottom: 2em;
+}
 
 /*# sourceMappingURL=output.css.map */
