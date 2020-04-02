@@ -41,10 +41,21 @@
         color: gray;
         font-size: 0.8em;
       }
-
-      .chef-selection {
-        border: 1px solid yellow;
-      }
     }
+    .chef-selection {
+      border: 3px solid rgb(235, 235, 22);
+    }
+  }
+  .chef-selection--title {
+    display: none;
+  }
+  .chef-selection--title--show {
+    display: inherit;
+    margin: initial;
+    padding-left: $gutter-smale;
+    text-align: left;
+    background-color: rgb(235, 235, 22);
+    color: white;
+    width: 40%;
   }
 }

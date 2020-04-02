@@ -1054,8 +1054,20 @@ main .link-button-view-all :hover {
   color: gray;
   font-size: 0.8em;
 }
-.main-menu-page__section__container .chef-selection {
-  border: 1px solid yellow;
+.main-menu-page__section .chef-selection {
+  border: 3px solid #ebeb16;
+}
+.main-menu-page .chef-selection--title {
+  display: none;
+}
+.main-menu-page .chef-selection--title--show {
+  display: inherit;
+  margin: initial;
+  padding-left: 0.5em;
+  text-align: left;
+  background-color: #ebeb16;
+  color: white;
+  width: 40%;
 }
 
 /*# sourceMappingURL=output.css.map */
