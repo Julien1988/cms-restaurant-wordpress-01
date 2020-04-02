@@ -191,5 +191,53 @@
         }
       }
     }
+    &__section-02 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      > :first-child {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+          width: 50%;
+        }
+
+        p {
+          width: 50%;
+          padding-left: $gutter * 1.6;
+        }
+
+        ul {
+          width: 40%;
+          text-align: center;
+
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: $gutter-large;
+        }
+      }
+
+      > :last-child {
+        h2 {
+          text-align: center;
+          margin-bottom: $gutter;
+        }
+      }
+      &__container {
+        width: 40%;
+        padding-right: $gutter;
+        padding-left: $gutter;
+      }
+    }
+
+    &__section-03 {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
   }
 }

@@ -741,6 +741,45 @@ body {
     text-align: right;
     margin-right: 0.5em;
   }
+  .footer__section-02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__section-02 > :first-child {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__section-02 > :first-child h1 {
+    width: 50%;
+  }
+  .footer__section-02 > :first-child p {
+    width: 50%;
+    padding-left: 1.6em;
+  }
+  .footer__section-02 > :first-child ul {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2em;
+  }
+  .footer__section-02 > :last-child h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .footer__section-02__container {
+    width: 40%;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .footer__section-03 {
+    text-align: center;
+  }
+  .footer__section-03 br {
+    display: none;
+  }
 }
 header .primary-button {
   color: #222222;
