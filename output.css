@@ -706,6 +706,11 @@ body {
     padding-right: 6em;
     padding-bottom: 4em;
   }
+  .main-front-page__section-banner__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 header .primary-button {
   color: #222222;

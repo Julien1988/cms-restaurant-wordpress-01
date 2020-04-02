@@ -143,5 +143,13 @@
         padding-bottom: $gutter-large * 2;
       }
     }
+
+    &__section-banner {
+      &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+    }
   }
 }
