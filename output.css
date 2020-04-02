@@ -650,12 +650,23 @@ body {
     border-bottom-left-radius: 2em;
   }
   .main-front-page__section-03__container-mid > :last-child {
-    background-color: red;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
   }
   .main-front-page__section-03__container-mid div {
     flex-grow: 2;
+  }
+  .main-front-page__section-03__container-bot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 8em;
+  }
+  .main-front-page__section-03__container-bot__article {
+    max-width: 40%;
+  }
+  .main-front-page__section-03__container-bot__link {
+    width: 100% !important;
   }
 }
 header .primary-button {

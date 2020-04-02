@@ -66,13 +66,27 @@
         }
 
         > :last-child {
-          background-color: red;
           border-top-right-radius: 2em;
           border-bottom-right-radius: 2em;
         }
 
         div {
           flex-grow: 2;
+        }
+      }
+
+      &__container-bot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: $gutter-large * 4;
+
+        &__article {
+          max-width: 40%;
+        }
+
+        &__link {
+          width: 100% !important;
         }
       }
     }
