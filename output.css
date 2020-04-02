@@ -726,6 +726,21 @@ body {
     width: 35%;
     margin-right: 1em;
   }
+
+  .footer__section-01__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__section-01__form > div {
+    width: 50%;
+  }
+  .footer__section-01__form__title {
+    width: 35%;
+  }
+  .footer__section-01__form__box-button {
+    text-align: right;
+    margin-right: 0.5em;
+  }
 }
 header .primary-button {
   color: #222222;

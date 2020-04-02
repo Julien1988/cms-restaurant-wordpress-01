@@ -170,4 +170,26 @@
       }
     }
   }
+
+  //   FOOTER
+
+  .footer {
+    &__section-01 {
+      &__form {
+        > div {
+          width: 50%;
+        }
+        display: flex;
+        justify-content: space-between;
+        &__title {
+          width: 35%;
+        }
+
+        &__box-button {
+          text-align: right;
+          margin-right: $gutter-smale;
+        }
+      }
+    }
+  }
 }
