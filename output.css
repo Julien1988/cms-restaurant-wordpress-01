@@ -591,6 +591,36 @@ body {
   padding-right: 1em;
 }
 
+@media (min-width: 768px) {
+  .header__container {
+    padding-bottom: 8em;
+  }
+
+  .header__container__background-box {
+    display: none;
+  }
+
+  .main-front-page__section-top {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-front-page__section-top :first-child {
+    padding-top: 2em !important;
+  }
+  .main-front-page__section-top :nth-child(2) {
+    order: -1;
+  }
+  .main-front-page__section-top :last-child {
+    margin-top: 2em;
+  }
+  .main-front-page__section-top__container {
+    transform: translateY(-1.5em);
+    width: 35%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+}
 header .primary-button {
   color: #222222;
   background-color: white;
