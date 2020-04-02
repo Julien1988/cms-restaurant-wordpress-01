@@ -1,0 +1,23 @@
+.main-menu-page {
+  &__title {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__section {
+    text-align: center;
+    h3 {
+      justify-content: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid black;
+      margin-left: 5em;
+      margin-right: 5em;
+      //width: 20%;
+    }
+  }
+}

@@ -1018,4 +1018,23 @@ main .link-button-view-all :hover {
   display: none;
 }
 
+.main-menu-page__title {
+  text-align: center;
+  font-size: 1em;
+}
+.main-menu-page__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-menu-page__section {
+  text-align: center;
+}
+.main-menu-page__section h3 {
+  justify-content: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
 /*# sourceMappingURL=output.css.map */
