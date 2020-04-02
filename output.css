@@ -685,6 +685,27 @@ body {
     margin-right: 15em;
     transform: translateY(-15em);
   }
+  .main-front-page__section-05__container-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .main-front-page__section-05__container-image > :nth-child(2) {
+    padding-right: initial;
+  }
+  .main-front-page__section-05__container-image > :nth-child(4) {
+    padding-right: initial;
+  }
+  .main-front-page__section-05__container-image__image {
+    padding-right: 1em;
+    max-width: 35%;
+  }
+  .main-front-page__section-05 > :last-child {
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom: 4em;
+  }
 }
 header .primary-button {
   color: #222222;

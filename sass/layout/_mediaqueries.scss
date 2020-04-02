@@ -116,5 +116,32 @@
         }
       }
     }
+
+    &__section-05 {
+      &__container-image {
+        display: flex;
+        justify-content: center;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+
+        > :nth-child(2) {
+          padding-right: initial;
+        }
+        > :nth-child(4) {
+          padding-right: initial;
+        }
+
+        &__image {
+          padding-right: $gutter;
+          max-width: 35%;
+        }
+      }
+
+      > :last-child {
+        padding-left: $gutter-large * 3;
+        padding-right: $gutter-large * 3;
+        padding-bottom: $gutter-large * 2;
+      }
+    }
   }
 }
