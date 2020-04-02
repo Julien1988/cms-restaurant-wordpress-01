@@ -33,5 +33,48 @@
         border-top-right-radius: 2em;
       }
     }
+
+    &__section-02 {
+      img {
+        min-width: 100%;
+        height: auto;
+      }
+      height: 50em;
+      &__container {
+        background-color: white;
+        margin-left: $gutter;
+        margin-right: $gutter;
+        padding-top: $gutter-large;
+        padding-bottom: $gutter-large;
+        transform: translateY(-11em);
+      }
+    }
+
+    &__section-03 {
+      background-color: white;
+      padding-top: $gutter-large;
+
+      &__container-mid {
+        display: flex;
+        margin-left: -2em !important;
+        margin-right: -2em !important;
+        align-content: stretch;
+
+        > :first-child {
+          border-top-right-radius: initial !important;
+          border-bottom-left-radius: 2em;
+        }
+
+        > :last-child {
+          background-color: red;
+          border-top-right-radius: 2em;
+          border-bottom-right-radius: 2em;
+        }
+
+        div {
+          flex-grow: 2;
+        }
+      }
+    }
   }
 }
