@@ -151,5 +151,23 @@
         align-items: baseline;
       }
     }
+
+    &__section-06 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__title,
+      &__subtitle {
+        width: 100%;
+      }
+      &__subtitle {
+        padding-bottom: $gutter;
+      }
+
+      &__article {
+        width: 35%;
+        margin-right: $gutter;
+      }
+    }
   }
 }

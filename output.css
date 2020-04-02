@@ -711,6 +711,21 @@ body {
     justify-content: space-around;
     align-items: baseline;
   }
+  .main-front-page__section-06 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-front-page__section-06__title, .main-front-page__section-06__subtitle {
+    width: 100%;
+  }
+  .main-front-page__section-06__subtitle {
+    padding-bottom: 1em;
+  }
+  .main-front-page__section-06__article {
+    width: 35%;
+    margin-right: 1em;
+  }
 }
 header .primary-button {
   color: #222222;
