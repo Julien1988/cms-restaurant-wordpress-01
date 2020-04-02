@@ -17,7 +17,34 @@
       border-bottom: 1px solid black;
       margin-left: 5em;
       margin-right: 5em;
-      //width: 20%;
+    }
+
+    &__container {
+      &__content-box {
+        &__title {
+          font-weight: 400;
+        }
+        &__span {
+          margin-left: $gutter;
+          margin-right: $gutter;
+          display: block;
+          width: 80%;
+          border-bottom: 1px dotted black;
+          border-width: medium;
+        }
+
+        &__price {
+          font-weight: 700;
+        }
+      }
+      &__text {
+        color: gray;
+        font-size: 0.8em;
+      }
+
+      .chef-selection {
+        border: 1px solid yellow;
+      }
     }
   }
 }

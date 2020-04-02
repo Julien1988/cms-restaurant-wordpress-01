@@ -1036,5 +1036,26 @@ main .link-button-view-all :hover {
   margin-left: 5em;
   margin-right: 5em;
 }
+.main-menu-page__section__container__content-box__title {
+  font-weight: 400;
+}
+.main-menu-page__section__container__content-box__span {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: block;
+  width: 80%;
+  border-bottom: 1px dotted black;
+  border-width: medium;
+}
+.main-menu-page__section__container__content-box__price {
+  font-weight: 700;
+}
+.main-menu-page__section__container__text {
+  color: gray;
+  font-size: 0.8em;
+}
+.main-menu-page__section__container .chef-selection {
+  border: 1px solid yellow;
+}
 
 /*# sourceMappingURL=output.css.map */
