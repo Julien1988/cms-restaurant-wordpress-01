@@ -90,5 +90,31 @@
         }
       }
     }
+
+    &__section-04 {
+      > :nth-child(4) {
+        // background-color: green !important;
+        > :first-child {
+          // background-color: blue;
+          transform: translateX(-5em);
+        }
+        > :last-child {
+          // background-color: yellow !important;
+          margin-right: initial !important;
+          margin-left: 15em !important;
+        }
+      }
+      &__article {
+        height: 35em;
+        &__container-img {
+          transform: translateX(5em);
+        }
+        &__container {
+          //background-color: red !important;
+          margin-right: 15em;
+          transform: translateY(-15em);
+        }
+      }
+    }
   }
 }

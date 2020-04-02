@@ -668,6 +668,23 @@ body {
   .main-front-page__section-03__container-bot__link {
     width: 100% !important;
   }
+  .main-front-page__section-04 > :nth-child(4) > :first-child {
+    transform: translateX(-5em);
+  }
+  .main-front-page__section-04 > :nth-child(4) > :last-child {
+    margin-right: initial !important;
+    margin-left: 15em !important;
+  }
+  .main-front-page__section-04__article {
+    height: 35em;
+  }
+  .main-front-page__section-04__article__container-img {
+    transform: translateX(5em);
+  }
+  .main-front-page__section-04__article__container {
+    margin-right: 15em;
+    transform: translateY(-15em);
+  }
 }
 header .primary-button {
   color: #222222;
