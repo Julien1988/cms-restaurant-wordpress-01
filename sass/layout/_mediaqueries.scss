@@ -307,7 +307,6 @@
     }
 
     &__section-02 {
-      color: green !important;
       display: flex;
       margin-top: initial !important;
       margin-bottom: -15em;
@@ -383,6 +382,28 @@
             margin-top: 3em;
           }
         }
+      }
+    }
+
+    &__section-05 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: $gutter-large * 2;
+      padding-bottom: $gutter-large * 2;
+      .container-desktop-view {
+        //background-color: green;
+        width: 35%;
+        padding: initial;
+      }
+      &__container-image {
+        width: 25%;
+      }
+      .mobile-view {
+        display: none;
+      }
+      .desktop-view {
+        display: block !important;
       }
     }
   }

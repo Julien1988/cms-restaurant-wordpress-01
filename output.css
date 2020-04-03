@@ -835,7 +835,6 @@ body {
     padding-right: 2em !important;
   }
   .main-front-page__section-02 {
-    color: green !important;
     display: flex;
     margin-top: initial !important;
     margin-bottom: -15em;
@@ -899,6 +898,26 @@ body {
   .main-front-page__section-04__article__container button {
     margin-left: 15em;
     margin-top: 3em;
+  }
+  .main-front-page__section-05 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  .main-front-page__section-05 .container-desktop-view {
+    width: 35%;
+    padding: initial;
+  }
+  .main-front-page__section-05__container-image {
+    width: 25%;
+  }
+  .main-front-page__section-05 .mobile-view {
+    display: none;
+  }
+  .main-front-page__section-05 .desktop-view {
+    display: block !important;
   }
 }
 header .primary-button {
@@ -1142,6 +1161,9 @@ main .link-button-view-all :hover {
 }
 .main-front-page__section-05 {
   padding-top: 2em;
+}
+.main-front-page__section-05 .desktop-view {
+  display: none;
 }
 .main-front-page__section-05__container {
   text-align: center;

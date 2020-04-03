@@ -253,6 +253,9 @@
     }
   }
   &__section-05 {
+    .desktop-view {
+      display: none;
+    }
     padding-top: $gutter-large;
     &__container {
       text-align: center;
