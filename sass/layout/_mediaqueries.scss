@@ -300,5 +300,28 @@
         transform: translateY(-5em);
       }
     }
+
+    &__section {
+      padding-left: $gutter-large !important;
+      padding-right: $gutter-large !important;
+    }
+
+    &__section-02 {
+      color: green !important;
+      display: flex;
+      margin-top: initial !important;
+      margin-bottom: -15em;
+      img {
+        min-width: initial;
+        width: 60%;
+        height: 60%;
+      }
+
+      &__container {
+        width: 50%;
+        height: 40%;
+        transform: translateY(3em) translateX(-6em);
+      }
+    }
   }
 }

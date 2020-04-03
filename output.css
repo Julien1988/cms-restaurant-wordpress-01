@@ -830,6 +830,26 @@ body {
     width: 25%;
     transform: translateY(-5em);
   }
+  .main-front-page__section {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+  .main-front-page__section-02 {
+    color: green !important;
+    display: flex;
+    margin-top: initial !important;
+    margin-bottom: -15em;
+  }
+  .main-front-page__section-02 img {
+    min-width: initial;
+    width: 60%;
+    height: 60%;
+  }
+  .main-front-page__section-02__container {
+    width: 50%;
+    height: 40%;
+    transform: translateY(3em) translateX(-6em);
+  }
 }
 header .primary-button {
   color: #222222;
