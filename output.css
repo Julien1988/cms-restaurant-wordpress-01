@@ -919,6 +919,9 @@ body {
   .main-front-page__section-05 .desktop-view {
     display: block !important;
   }
+  .main-front-page__section-banner {
+    padding: initial !important;
+  }
 }
 header .primary-button {
   color: #222222;
