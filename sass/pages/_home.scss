@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.desktop-view {
+  display: none;
+}
+
 .main-front-page {
   background-color: $background-color-secondary;
   &__section-top {

@@ -813,6 +813,31 @@ body {
     margin-right: 2em;
   }
 
+  body {
+    background-color: #f1f1f1;
+  }
+  body .desktop-view {
+    display: block !important;
+  }
+
+  .footer {
+    margin-top: 10em;
+    background-color: #222222;
+  }
+  .footer :first-of-type img {
+    width: 100%;
+  }
+  .footer__section-01 {
+    background-color: #282828;
+    margin-left: 10em;
+    margin-right: 10em;
+    transform: translateY(-5em);
+    box-shadow: 10px 5px 5px black;
+  }
+  .footer__section-01 form {
+    padding: 1em;
+  }
+
   .main-front-page__section-top {
     display: flex;
     flex-wrap: nowrap;
@@ -961,6 +986,10 @@ main .link-button-view-all :hover {
   background-color: white !important;
   color: black;
   border-color: black !important;
+}
+
+.desktop-view {
+  display: none;
 }
 
 .main-front-page {

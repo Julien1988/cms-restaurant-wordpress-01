@@ -277,6 +277,38 @@
     }
   }
 
+  // FOOTER
+
+  body {
+    background-color: $background-color-secondary;
+    .desktop-view {
+      display: block !important;
+    }
+  }
+
+  .footer {
+    margin-top: 10em;
+    background-color: $background-color;
+
+    :first-of-type {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__section-01 {
+      background-color: #282828;
+      margin-left: 10em;
+      margin-right: 10em;
+      transform: translateY(-5em);
+      box-shadow: 10px 5px 5px rgb(0, 0, 0);
+
+      form {
+        padding: $gutter;
+      }
+    }
+  }
+
   // Front page
 
   .main-front-page {
