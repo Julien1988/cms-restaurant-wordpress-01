@@ -922,6 +922,13 @@ body {
   .main-front-page__section-banner {
     padding: initial !important;
   }
+  .main-front-page__section-06 {
+    display: flex;
+    padding-bottom: 2em;
+  }
+  .main-front-page__section-06__article {
+    width: 20%;
+  }
 }
 header .primary-button {
   color: #222222;

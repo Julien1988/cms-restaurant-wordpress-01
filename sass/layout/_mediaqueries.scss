@@ -410,5 +410,14 @@
     &__section-banner {
       padding: initial !important;
     }
+
+    &__section-06 {
+      display: flex;
+      padding-bottom: $gutter-large;
+
+      &__article {
+        width: 20%;
+      }
+    }
   }
 }
