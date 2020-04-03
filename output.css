@@ -401,6 +401,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+.header .desktop-view {
+  display: none;
+}
 .header__nav {
   display: flex;
   align-items: baseline;
@@ -779,6 +782,53 @@ body {
   }
   .footer__section-03 br {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding-bottom: 4em;
+  }
+  .header__container h2,
+.header__container h3 {
+    padding-left: initial;
+    padding-left: 1em;
+    font-size: 3.5em;
+  }
+  .header .mobile-view {
+    display: none;
+  }
+  .header .desktop-view {
+    margin-top: 1em;
+    display: inline;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .header .desktop-view h1 {
+    width: 30%;
+    min-width: 20%;
+  }
+  .header .desktop-view a {
+    margin-right: 2em;
+  }
+
+  .main-front-page__section-top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .main-front-page__section-top > :nth-child(1) {
+    padding-top: 2.8em !important;
+  }
+  .main-front-page__section-top > :last-child {
+    margin-top: initial;
+    padding-top: 2em !important;
+  }
+  .main-front-page__section-top__container {
+    max-height: 20em;
+    width: 25%;
+    transform: translateY(-5em);
   }
 }
 header .primary-button {

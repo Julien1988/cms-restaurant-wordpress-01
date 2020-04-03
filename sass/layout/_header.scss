@@ -3,6 +3,9 @@
 // -----------------------------------------------------------------------------
 
 .header {
+  .desktop-view {
+    display: none;
+  }
   background-image: url(assets/images/banner-top.jpg);
 
   background-size: cover;
