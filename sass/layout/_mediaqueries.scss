@@ -307,6 +307,38 @@
         padding: $gutter;
       }
     }
+
+    &__section-02 {
+      justify-content: space-around;
+      > :first-child {
+        width: 25%;
+        flex-direction: column;
+
+        h1 {
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+          padding: initial;
+        }
+
+        ul {
+          width: 100%;
+
+          li {
+            font-size: 1em;
+
+            img {
+              width: 30%;
+            }
+          }
+        }
+      }
+      &__container {
+        width: 15%;
+      }
+    }
   }
 
   // Front page

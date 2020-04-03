@@ -837,6 +837,32 @@ body {
   .footer__section-01 form {
     padding: 1em;
   }
+  .footer__section-02 {
+    justify-content: space-around;
+  }
+  .footer__section-02 > :first-child {
+    width: 25%;
+    flex-direction: column;
+  }
+  .footer__section-02 > :first-child h1 {
+    width: 100%;
+  }
+  .footer__section-02 > :first-child p {
+    width: 100%;
+    padding: initial;
+  }
+  .footer__section-02 > :first-child ul {
+    width: 100%;
+  }
+  .footer__section-02 > :first-child ul li {
+    font-size: 1em;
+  }
+  .footer__section-02 > :first-child ul li img {
+    width: 30%;
+  }
+  .footer__section-02__container {
+    width: 15%;
+  }
 
   .main-front-page__section-top {
     display: flex;
