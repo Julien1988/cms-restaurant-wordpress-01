@@ -323,5 +323,19 @@
         transform: translateY(3em) translateX(-6em);
       }
     }
+
+    &__section-03 {
+      &__container-mid {
+        margin-left: $gutter-large * 4 !important;
+        margin-right: $gutter-large * 4 !important;
+      }
+
+      &__container-bot {
+        padding-bottom: $gutter;
+        &__article {
+          width: 25%;
+        }
+      }
+    }
   }
 }

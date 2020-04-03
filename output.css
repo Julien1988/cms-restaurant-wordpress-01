@@ -850,6 +850,16 @@ body {
     height: 40%;
     transform: translateY(3em) translateX(-6em);
   }
+  .main-front-page__section-03__container-mid {
+    margin-left: 8em !important;
+    margin-right: 8em !important;
+  }
+  .main-front-page__section-03__container-bot {
+    padding-bottom: 1em;
+  }
+  .main-front-page__section-03__container-bot__article {
+    width: 25%;
+  }
 }
 header .primary-button {
   color: #222222;
