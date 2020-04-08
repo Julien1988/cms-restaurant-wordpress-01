@@ -290,6 +290,16 @@
     margin-top: 10em;
     background-color: $background-color;
 
+    &__image {
+      width: 100%;
+
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(40, 40, 40, 1) 62%
+      );
+    }
+
     :first-of-type {
       img {
         width: 100%;
@@ -376,8 +386,9 @@
       margin-bottom: -15em;
       img {
         min-width: initial;
-        width: 60%;
+        width: auto;
         height: 60%;
+        object-fit: cover;
       }
 
       &__container {
@@ -473,6 +484,11 @@
 
     &__section-banner {
       padding: initial !important;
+
+      &__image-top,
+      &__image-bottom {
+        width: 100% !important;
+      }
     }
 
     &__section-06 {

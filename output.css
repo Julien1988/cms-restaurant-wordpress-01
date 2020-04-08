@@ -824,6 +824,10 @@ body {
     margin-top: 10em;
     background-color: #222222;
   }
+  .footer__image {
+    width: 100%;
+    background: linear-gradient(180deg, white 0%, #282828 62%);
+  }
   .footer :first-of-type img {
     width: 100%;
   }
@@ -892,8 +896,9 @@ body {
   }
   .main-front-page__section-02 img {
     min-width: initial;
-    width: 60%;
+    width: auto;
     height: 60%;
+    object-fit: cover;
   }
   .main-front-page__section-02__container {
     width: 50%;
@@ -972,6 +977,9 @@ body {
   }
   .main-front-page__section-banner {
     padding: initial !important;
+  }
+  .main-front-page__section-banner__image-top, .main-front-page__section-banner__image-bottom {
+    width: 100% !important;
   }
   .main-front-page__section-06 {
     display: flex;
