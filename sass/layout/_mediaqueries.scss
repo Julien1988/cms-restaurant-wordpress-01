@@ -262,14 +262,16 @@
     }
     .desktop-view {
       margin-top: $gutter;
-      display: inline;
-      display: flex;
+
+      display: flex !important;
       justify-content: space-around;
       padding-left: $gutter-large;
       padding-right: $gutter-large;
+      font-size: 1.5em;
       h1 {
         width: 30%;
         min-width: 20%;
+        font-size: 2em;
       }
       a {
         margin-right: $gutter-large;
