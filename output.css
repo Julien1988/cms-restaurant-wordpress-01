@@ -835,7 +835,7 @@ body {
     background-color: #282828;
     margin-left: 10em;
     margin-right: 10em;
-    transform: translateY(-5em);
+    transform: translateY(-10em);
     box-shadow: 10px 5px 5px black;
   }
   .footer__section-01 form {
