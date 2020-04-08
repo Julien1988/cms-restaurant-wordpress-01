@@ -1086,6 +1086,34 @@ body {
   .main-post-type__section-03__container form .form-group-text-message {
     width: 80%;
   }
+  .main-post-type__section-04 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 12em;
+  }
+  .main-post-type__section-04 > :first-child {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-post-type__section-04 > :first-child h2,
+.main-post-type__section-04 > :first-child p,
+.main-post-type__section-04 > :first-child a {
+    flex-grow: 1;
+  }
+  .main-post-type__section-04 > :first-child p {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  .main-post-type__section-04 > :last-child {
+    width: 30%;
+    display: flex;
+  }
+  .main-post-type__section-04 > :last-child img {
+    width: 35%;
+  }
 }
 header .primary-button {
   color: #222222;
