@@ -1036,6 +1036,16 @@ body {
     padding-right: 6em;
     padding-bottom: 10em;
   }
+  .main-post-type__section-02__title {
+    margin-top: 4em !important;
+  }
+  .main-post-type__section-02__subtitle {
+    margin-bottom: 2em !important;
+  }
+  .main-post-type__section-02 iframe {
+    width: 100%;
+    margin-bottom: 8em;
+  }
 }
 header .primary-button {
   color: #222222;

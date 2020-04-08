@@ -563,5 +563,18 @@
         }
       }
     }
+
+    &__section-02 {
+      &__title {
+        margin-top: $gutter-large * 2 !important;
+      }
+      &__subtitle {
+        margin-bottom: $gutter-large !important;
+      }
+      iframe {
+        width: 100%;
+        margin-bottom: $gutter-large * 4;
+      }
+    }
   }
 }
