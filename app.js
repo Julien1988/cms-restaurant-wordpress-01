@@ -31,6 +31,10 @@
           li.className = "header__burger-menu__liste__item";
           li.innerHTML = arrayElement[i];
         }
+        // AJOUT BUF Fix
+        document.querySelector(".header__container__background-box").className =
+          "header__container__background-box desktop-view";
+        // END
         console.log(clickCount);
         return clickCount;
       } else {
