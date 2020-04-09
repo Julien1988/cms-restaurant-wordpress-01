@@ -1536,7 +1536,12 @@ main .link-button-view-all :hover {
   padding: 1em;
   background-color: white;
 }
-.main-post-type__section-03 form button {
+.main-post-type__section-03 form .form-group-button {
+  margin-bottom: 2em;
+}
+.main-post-type__section-03 form .form-group-button button {
+  height: 100%;
+  font-size: 1.5em;
   background-color: #222222 !important;
   color: white;
 }
