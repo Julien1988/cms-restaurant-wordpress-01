@@ -1087,6 +1087,13 @@ body {
   .main-post-type__section-03__container form .form-group-text-message {
     width: 80%;
   }
+  .main-post-type__section-03__container form .form-group-button {
+    margin-bottom: 2em;
+  }
+  .main-post-type__section-03__container form .form-group-button button {
+    height: 100%;
+    font-size: 1.5em;
+  }
   .main-post-type__section-04 {
     display: flex;
     flex-direction: row-reverse;

@@ -625,6 +625,14 @@
           .form-group-text-message {
             width: 80%;
           }
+
+          .form-group-button {
+            margin-bottom: $gutter-large;
+            button {
+              height: 100%;
+              font-size: 1.5em;
+            }
+          }
         }
       }
     }
