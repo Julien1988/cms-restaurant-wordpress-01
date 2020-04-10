@@ -73,41 +73,53 @@
     <section class="main-front-page__section main-front-page__section-03">
         <div class="main-front-page__section-03__container-top">
             <h1 class="main-front-page__section-03__container-top__title">
-                Let's Discover Food
+                <?php the_field('section-03-titre-01');
+                _ ?>
             </h1>
             <h2 class="main-front-page__section-03__container-top__subtitle">
-                Order online
+                <?php the_field('section-03-sous-titre-01');
+                _ ?>
             </h2>
         </div>
         <div class="main-front-page__section-03__container-mid">
             <div class="main-front-page__section-03__container-mid__content-box">
-                <img src="assets/svg/dinner.svg" alt="" class="main-front-page__section-03__container-mid__content-box__image" />
+                <img src=<?php the_field('section-03-logo-image-01');
+                            _ ?> alt="" class="main-front-page__section-03__container-mid__content-box__image" />
                 <p class="main-front-page__section-03__container-mid__content-box__text">
-                    Dinner
+                    <?php the_field('section-03-logo-titre-01');
+                    _ ?>
                 </p>
             </div>
             <div class="main-front-page__section-03__container-mid__content-box">
-                <img src="assets/svg/lunch.svg" alt="" class="main-front-page__section-03__container-mid__content-box__image" />
+                <img src=<?php the_field('section-03-logo-image-02');
+                            _ ?> alt="" class="main-front-page__section-03__container-mid__content-box__image" />
                 <p class="main-front-page__section-03__container-mid__content-box__text">
-                    Lunch
+                    <?php the_field('section-03-logo-titre-02');
+                    _ ?>
                 </p>
             </div>
             <div class="main-front-page__section-03__container-mid__content-box">
-                <img src="assets/svg/original-recipes.svg" alt="" class="main-front-page__section-03__container-mid__content-box__image" />
+                <img src=<?php the_field('section-03-logo-image-03');
+                            _ ?> alt="" class="main-front-page__section-03__container-mid__content-box__image" />
                 <p class="main-front-page__section-03__container-mid__content-box__text">
-                    Brunch
+                    <?php the_field('section-03-logo-titre-03');
+                    _ ?>
                 </p>
             </div>
             <div class="main-front-page__section-03__container-mid__content-box">
-                <img src="assets/svg/dessert.svg" alt="" class="main-front-page__section-03__container-mid__content-box__image" />
+                <img src=<?php the_field('section-03-logo-image-04');
+                            _ ?> alt="" class="main-front-page__section-03__container-mid__content-box__image" />
                 <p class="main-front-page__section-03__container-mid__content-box__text">
-                    Dessert
+                    <?php the_field('section-03-logo-titre-04');
+                    _ ?>
                 </p>
             </div>
             <div class="main-front-page__section-03__container-mid__content-box">
-                <img src="assets/svg/wine.svg" alt="" class="main-front-page__section-03__container-mid__content-box__image" />
+                <img src=<?php the_field('section-03-logo-image-05');
+                            _ ?> alt="" class="main-front-page__section-03__container-mid__content-box__image" />
                 <p class="main-front-page__section-03__container-mid__content-box__text">
-                    Wine
+                    <?php the_field('section-03-logo-titre-05');
+                    _ ?>
                 </p>
             </div>
         </div>
