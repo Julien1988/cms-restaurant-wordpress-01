@@ -19,7 +19,7 @@
     <header class="header">
         <nav class="header__nav mobile-view">
             <h1 class="header__nav__title">
-                <a href="#" class="header__nav__title__link">Dev Restaurant</a>
+                <a href="#" class="header__nav__title__link"><?php bloginfo('title'); ?></a>
             </h1>
             <span class="header__nav__subtitle">
                 <a href="#" class="header__nav__subtile__link">Menu</a>
@@ -30,7 +30,7 @@
         <!-- NAV view descope -->
         <nav class="header__nav desktop-view">
             <h1 class="header__nav__title">
-                <a href="#" class="header__nav__title__link">Dev Restaurant</a>
+                <a href="#" class="header__nav__title__link"><?php bloginfo('title'); ?></a>
             </h1>
             <a class="header__burger-menu__list__item__link" href="#"><i class="fas fa-home"></i></a>
             <a class="header__burger-menu__list__item__link" href="#">Ours restaurants</a>
