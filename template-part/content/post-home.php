@@ -131,6 +131,9 @@
             if ($query->have_posts()) {
                 while ($query->have_posts()) {
                     $query->the_post();
+
+
+
             ?>
                     <article class="main-front-page__section-03__container-bot__article">
                         <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src=<?php the_field('article-produit_image-01') ?> alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
@@ -161,7 +164,9 @@
 
                 }
             }
+
             ?>
+            <?php wp_reset_query() ?>
             <!-- TODO mettre un url a la view all -->
             <a href="#" class="main-front-page__section-03__container-bot__link link-button-order link-button-view-all">
                 <button class="main-front-page__section-03__container-bot__link__button button-order button-view-all">
