@@ -124,111 +124,45 @@
             </div>
         </div>
         <div class="main-front-page__section-03__container-bot">
-            <article class="main-front-page__section-03__container-bot__article">
-                <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
-                    <span class="main-front-page__section-03__container-bot__article__grid-layout__span">50$</span>
-                </a>
+            <?php
+            // $cathegory = 'produit';
+            // $arg = "category_name=$arg";
+            $query = new WP_Query('category_name=produit');
+            if ($query->have_posts()) {
+                while ($query->have_posts()) {
+                    $query->the_post();
+            ?>
+                    <article class="main-front-page__section-03__container-bot__article">
+                        <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src=<?php the_field('article-produit_image-01') ?> alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
+                            <span class="main-front-page__section-03__container-bot__article__grid-layout__span"><?php the_field('article-produit-prix-01');
+                                                                                                                    _ ?>$</span>
+                        </a>
 
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <h3 class="main-front-page__section-03__container-bot__article__link__title">
-                        Banana & Blueberry French Toast
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <p class="main-front-page__section-03__container-bot__article__link__text">
-                        Look, just because I don't be givin' no man a foot massage.
-                    </p>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link link-button-order">
-                    <button class="main-front-page__section-03__container-bot__article__link__button button-order">
-                        Order
-                    </button>
-                </a>
-            </article>
-            <article class="main-front-page__section-03__container-bot__article">
-                <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
-                    <span class="main-front-page__section-03__container-bot__article__grid-layout__span">50$</span>
-                </a>
+                        <a href="#" class="main-front-page__section-03__container-bot__article__link">
+                            <h3 class="main-front-page__section-03__container-bot__article__link__title">
+                                <?php the_title() ?>
+                            </h3>
+                        </a>
+                        <a href="#" class="main-front-page__section-03__container-bot__article__link">
+                            <p class="main-front-page__section-03__container-bot__article__link__text">
+                                <?php the_excerpt() ?>
+                            </p>
+                        </a>
+                        <a href="<?php the_permalink() ?>" class="main-front-page__section-03__container-bot__article__link link-button-order">
+                            <button class="main-front-page__section-03__container-bot__article__link__button button-order">
+                                Order
+                            </button>
+                        </a>
+                    </article>
 
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <h3 class="main-front-page__section-03__container-bot__article__link__title">
-                        Banana & Blueberry French Toast
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <p class="main-front-page__section-03__container-bot__article__link__text">
-                        Look, just because I don't be givin' no man a foot massage.
-                    </p>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link link-button-order">
-                    <button class="main-front-page__section-03__container-bot__article__link__button button-order">
-                        Order
-                    </button>
-                </a>
-            </article>
-            <article class="main-front-page__section-03__container-bot__article">
-                <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
-                    <span class="main-front-page__section-03__container-bot__article__grid-layout__span">50$</span>
-                </a>
 
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <h3 class="main-front-page__section-03__container-bot__article__link__title">
-                        Banana & Blueberry French Toast
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <p class="main-front-page__section-03__container-bot__article__link__text">
-                        Look, just because I don't be givin' no man a foot massage.
-                    </p>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link link-button-order">
-                    <button class="main-front-page__section-03__container-bot__article__link__button button-order">
-                        Order
-                    </button>
-                </a>
-            </article>
-            <article class="main-front-page__section-03__container-bot__article">
-                <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
-                    <span class="main-front-page__section-03__container-bot__article__grid-layout__span">50$</span>
-                </a>
+            <?php
 
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <h3 class="main-front-page__section-03__container-bot__article__link__title">
-                        Banana & Blueberry French Toast
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <p class="main-front-page__section-03__container-bot__article__link__text">
-                        Look, just because I don't be givin' no man a foot massage.
-                    </p>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link link-button-order">
-                    <button class="main-front-page__section-03__container-bot__article__link__button button-order">
-                        Order
-                    </button>
-                </a>
-            </article>
-            <article class="main-front-page__section-03__container-bot__article">
-                <a href="#" class="main-front-page__section-03__container-bot__article__grid-layout"><img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-03__container-bot__article__grid-layout__image" />
-                    <span class="main-front-page__section-03__container-bot__article__grid-layout__span">50$</span>
-                </a>
 
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <h3 class="main-front-page__section-03__container-bot__article__link__title">
-                        Banana & Blueberry French Toast
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link">
-                    <p class="main-front-page__section-03__container-bot__article__link__text">
-                        Look, just because I don't be givin' no man a foot massage.
-                    </p>
-                </a>
-                <a href="#" class="main-front-page__section-03__container-bot__article__link link-button-order">
-                    <button class="main-front-page__section-03__container-bot__article__link__button button-order">
-                        Order
-                    </button>
-                </a>
-            </article>
+                }
+            }
+            ?>
+            <!-- TODO mettre un url a la view all -->
             <a href="#" class="main-front-page__section-03__container-bot__link link-button-order link-button-view-all">
                 <button class="main-front-page__section-03__container-bot__link__button button-order button-view-all">
                     View All
