@@ -151,7 +151,31 @@
             Discover our franchise
         </h1>
         <h2 class="main-front-page__section-04__subtitle">Our Restaurants</h2>
-        <article class="main-front-page__section main-front-page__section-04__article">
+
+        <!-- Boucle des pages articles -->
+
+        <?php
+        $args = array(
+            'post_type' => 'restaurant',
+            'post_status' => 'publish',
+            'posts_per_page' => 8,
+            'orderby' => 'title',
+            'order' => 'ASC',
+        );
+        $query = new WP_Query($args);
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+
+                get_template_part('template-part/content/information-liste');
+            }
+        }
+
+        wp_reset_query()
+
+
+        ?>
+        <!-- <article class="main-front-page__section main-front-page__section-04__article">
             <div class="main-front-page__section-04__article__container-img">
                 <img src="assets/images/resto1.jpg" alt="" class="main-front-page__section-04__article__container-img__image" />
             </div>
@@ -232,7 +256,7 @@
                     </button>
                 </a>
             </div>
-        </article>
+        </article> -->
     </section>
     <section class="main-front-page__section main-front-page__section-05">
         <div class="main-front-page__section-05__container">
