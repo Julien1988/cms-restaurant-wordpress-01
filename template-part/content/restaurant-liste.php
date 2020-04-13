@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name : information-liste
+Template Name : restaurant-liste
 */
 
 ?>
@@ -25,7 +25,7 @@ Template Name : information-liste
         <div class="main-front-page__section-04__article__container__text">
             <?php the_excerpt(); ?>
         </div>
-        <a href="#" class="main-front-page__section-04__article__container__link link-button-order link-button-view-all">
+        <a href="<?php the_permalink(); ?>" class="main-front-page__section-04__article__container__link link-button-order link-button-view-all">
             <button class="main-front-page__section-04__article__container__link__button button-order button-view-all">
                 More infos
             </button>

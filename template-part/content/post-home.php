@@ -167,7 +167,7 @@
             while ($query->have_posts()) {
                 $query->the_post();
 
-                get_template_part('template-part/content/information-liste');
+                get_template_part('template-part/content/restaurant-liste');
             }
         }
 
@@ -175,121 +175,35 @@
 
 
         ?>
-        <!-- <article class="main-front-page__section main-front-page__section-04__article">
-            <div class="main-front-page__section-04__article__container-img">
-                <img src="assets/images/resto1.jpg" alt="" class="main-front-page__section-04__article__container-img__image" />
-            </div>
-            <div class="main-front-page__section-04__article__container">
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h3 class="main-front-page__section-04__article__container__link__title">
-                        Our original restaurant
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h4 class="main-front-page__section-04__article__container__link__subtitle">
-                        The Chef's cafetaria
-                    </h4>
-                </a>
-                <p class="main-front-page__section-04__article__container__text">
-                    You think water moves fast? You should see ice. It moves like it
-                    has a mind. Like it knows it killed the world once and got a taste
-                    for murder. After the avalanche, it took us a week to climb out.
-                </p>
-                <a href="#" class="main-front-page__section-04__article__container__link link-button-order link-button-view-all">
-                    <button class="main-front-page__section-04__article__container__link__button button-order button-view-all">
-                        More infos
-                    </button>
-                </a>
-            </div>
-        </article>
-        <article class="main-front-page__section main-front-page__section-04__article">
-            <div class="main-front-page__section-04__article__container-img">
-                <img src="assets/images/resto2.jpg" alt="" class="main-front-page__section-04__article__container-img__image" />
-            </div>
-            <div class="main-front-page__section-04__article__container">
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h3 class="main-front-page__section-04__article__container__link__title">
-                        Our first restaurant in Brussels
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h4 class="main-front-page__section-04__article__container__link__subtitle">
-                        The BeCentral resto
-                    </h4>
-                </a>
-                <p class="main-front-page__section-04__article__container__text">
-                    You think water moves fast? You should see ice. It moves like it
-                    has a mind. Like it knows it killed the world once and got a taste
-                    for murder. After the avalanche, it took us a week to climb out.
-                    Now, I don't know exactly when we turned on each other, but I know
-                    that seven of us survived the slide...
-                </p>
-                <a href="#" class="main-front-page__section-04__article__container__link link-button-order link-button-view-all">
-                    <button class="main-front-page__section-04__article__container__link__button button-order button-view-all">
-                        More infos
-                    </button>
-                </a>
-            </div>
-        </article>
-        <article class="main-front-page__section main-front-page__section-04__article">
-            <div class="main-front-page__section-04__article__container-img">
-                <img src="assets/images/resto3.jpg" alt="" class="main-front-page__section-04__article__container-img__image" />
-            </div>
-            <div class="main-front-page__section-04__article__container">
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h3 class="main-front-page__section-04__article__container__link__title">
-                        Outssiplou, the place to be
-                    </h3>
-                </a>
-                <a href="#" class="main-front-page__section-04__article__container__link">
-                    <h4 class="main-front-page__section-04__article__container__link__subtitle">
-                        The Honkytonk
-                    </h4>
-                </a>
-                <p class="main-front-page__section-04__article__container__text">
-                    Well, the way they make shows is, they make one show. That show's
-                    called a pilot.
-                </p>
-                <a href="#" class="main-front-page__section-04__article__container__link link-button-order link-button-view-all">
-                    <button class="main-front-page__section-04__article__container__link__button button-order button-view-all">
-                        More infos
-                    </button>
-                </a>
-            </div>
-        </article> -->
+
     </section>
     <section class="main-front-page__section main-front-page__section-05">
         <div class="main-front-page__section-05__container">
             <h1 class="main-front-page__section-05__container__title mobile-view">
-                Lest's discover food
+                <?php the_field('titre-menu-home-01'); ?>
             </h1>
             <h2 class="main-front-page__section-05__container__subtitle mobile-view">
-                Discover our menu
+                <?php the_field('sous-titre-menu-home-01'); ?>
             </h2>
         </div>
         <div class="main-front-page__section-05__container main-front-page__section-05__container-image">
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-05__container-image__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-05__container-image__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-05__container-image__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-front-page__section-05__container-image__image" />
+            <img src=<?php the_field('image-menu-01'); ?> alt="" class="main-front-page__section-05__container-image__image" />
+            <img src=<?php the_field('image-menu-02'); ?> alt="" class=" main-front-page__section-05__container-image__image" />
+            <img src=<?php the_field('image-menu-03'); ?> alt="" class=" main-front-page__section-05__container-image__image" />
+            <img src=<?php the_field('image-menu-04'); ?> alt="" class=" main-front-page__section-05__container-image__image" />
         </div>
         <div class="main-front-page__section-05__container container-desktop-view">
             <h1 class="main-front-page__section-05__container__title desktop-view">
-                Lest's discover food
+                <?php the_field('titre-menu-home-01'); ?>
             </h1>
             <h2 class="main-front-page__section-05__container__subtitle desktop-view">
-                Discover our menu
+                <?php the_field('sous-titre-menu-home-01'); ?>
             </h2>
             <p class="main-front-page__section-05__container__text">
-                Your bones don't break, mine do. That's clear. Your cells react to
-                bacteria and viruses differently than mine. You don't get sick, I
-                do. That's also clear. But for some reason, you and I react the
-                exact same way to water. We swallow it too fast, we choke. We get
-                some in our lungs, we drown. However unreal it may seem, we are
-                connected, you and I. We're on the same curve, just on opposite
-                ends.
+                <?php the_field('texte-menu-home-01'); ?>
             </p>
-            <a href="#" class="main-front-page__section-05__container__link link-button-order link-button-view-all">
+            <!-- http://localhost:8000/menu -->
+            <a href=<?php echo get_home_url() . '/menu' ?> class="main-front-page__section-05__container__link link-button-order link-button-view-all">
                 <button class="main-front-page__section-05__container__link__button button-view-all">
                     View the Full Menu
                 </button>
