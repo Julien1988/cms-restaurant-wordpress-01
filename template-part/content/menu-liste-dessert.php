@@ -5,7 +5,6 @@ Template Name : menu-liste-dessert
 
 ?>
 
-
 <!-- Affichage du menu DESSERT -->
 <h5 class="<?php the_field('selection-du-chef-menu-page-01'); ?>">
     chef selection

@@ -212,43 +212,44 @@
     </section>
 
     <section class="main-front-page__section main-front-page__section-banner">
+
         <img src="assets/images/hachures-noires.png" alt="" class="main-front-page__section-banner__image main-front-page__section-banner__image-top" />
 
         <div class="main-front-page__section-banner__container">
             <div class="main-front-page__section-banner__container__content-box">
-                <img src="assets/svg/award.svg" alt="" class="main-front-page__section-banner__container__content-box__image" />
+                <img src=<?php the_field('image-home-banniere-01'); ?> alt="" class="main-front-page__section-banner__container__content-box__image" />
                 <p class="main-front-page__section-banner__container__content-box__number">
-                    28
+                    <?php the_field('nombre-home-banniere-08'); ?>
                 </p>
                 <p class="main-front-page__section-banner__container__content-box__text">
-                    Award Win
+                    <?php the_field('titre-home-banniere-01'); ?>
                 </p>
             </div>
             <div class="main-front-page__section-banner__container__content-box">
-                <img src="assets/svg/qualifiedstaff.svg" alt="" class="main-front-page__section-banner__container__content-box__image" />
+                <img src=<?php the_field('image-home-banniere-02'); ?> alt="" class="main-front-page__section-banner__container__content-box__image" />
                 <p class="main-front-page__section-banner__container__content-box__number">
-                    82
+                    <?php the_field('nombre-home-banniere-09'); ?>
                 </p>
                 <p class="main-front-page__section-banner__container__content-box__text">
-                    Qualified Staff
+                    <?php the_field('titre-home-banniere-02'); ?>
                 </p>
             </div>
             <div class="main-front-page__section-banner__container__content-box">
-                <img src="assets/svg/branches.svg" alt="" class="main-front-page__section-banner__container__content-box__image" />
+                <img src=<?php the_field('image-home-banniere-03'); ?> alt="" class="main-front-page__section-banner__container__content-box__image" />
                 <p class="main-front-page__section-banner__container__content-box__number">
-                    3
+                    <?php the_field('nombre-home-banniere-10'); ?>
                 </p>
                 <p class="main-front-page__section-banner__container__content-box__text">
-                    Branches
+                    <?php the_field('titre-home-banniere-03'); ?>
                 </p>
             </div>
             <div class="main-front-page__section-banner__container__content-box">
-                <img src="assets/svg/happycustomers.svg" alt="" class="main-front-page__section-banner__container__content-box__image" />
+                <img src=<?php the_field('image-home-banniere-04'); ?> alt="" class="main-front-page__section-banner__container__content-box__image" />
                 <p class="main-front-page__section-banner__container__content-box__number">
-                    6028
+                    <?php the_field('nombre-home-banniere-11'); ?>
                 </p>
                 <p class="main-front-page__section-banner__container__content-box__text">
-                    Happy Customers
+                    <?php the_field('titre-home-banniere-04'); ?>
                 </p>
             </div>
         </div>
