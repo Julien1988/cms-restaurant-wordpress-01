@@ -1,15 +1,34 @@
 // Gesttion de la nav bar pour la vue mobile
 
 (() => {
-  const arrayElement = [
-    "<a class='header__burger-menu__list__item__link' href='#'><i class='fas fa-home'></i></a>",
-    "<a class='header__burger-menu__list__item__link' href='#'>Ours restaurants</a>",
-    "<a class='header__burger-menu__list__item__link' href='#'>Menu</a>",
-    "<a class='header__burger-menu__list__item__link' href='#'>Recipes</a>",
-    "<a class='header__burger-menu__list__item__link' href='#'>Reservations</a>",
-    "<a class='header__burger-menu__list__item__link primary-button' href='#'>Order</a>",
-    "<a class='header__burger-menu__list__item__link' href='#'><i class='fas fa-shopping-cart'></i></a>"
-  ];
+  // Récupération des données du menu dans le HTML généré par wordpress
+
+  let getWpNavList = document.querySelector(".menu-desktop-view");
+
+  let getWpNavListChildes = getWpNavList.children;
+  console.log(getWpNavList);
+  console.log(getWpNavListChildes.length);
+  console.log(getWpNavListChildes[0]);
+
+  let arrayElement = [];
+
+  for (let i = 0; i < getWpNavListChildes.length; i++) {
+    console.log(getWpNavListChildes[i].firstChild);
+    arrayElement.push(getWpNavListChildes[i].innerHTML);
+  }
+  // FIN de la récupération
+
+  // Exemple d'utilisation de la boucle
+
+  // const arrayElement = [
+  //   "<a class='header__burger-menu__list__item__link' href='#'><i class='fas fa-home'></i></a>",
+  //   "<a class='header__burger-menu__list__item__link' href='#'>Ours restaurants</a>",
+  //   "<a class='header__burger-menu__list__item__link' href='#'>Menu</a>",
+  //   "<a class='header__burger-menu__list__item__link' href='#'>Recipes</a>",
+  //   "<a class='header__burger-menu__list__item__link' href='#'>Reservations</a>",
+  //   "<a class='header__burger-menu__list__item__link primary-button' href='#'>Order</a>",
+  //   "<a class='header__burger-menu__list__item__link' href='#'><i class='fas fa-shopping-cart'></i></a>",
+  // ];
 
   let getElement = document.querySelector(".header");
   let clickCount = 0;
@@ -77,7 +96,7 @@
   }
 
   function resolveAfter() {
-    return new Promise(changinColor => {
+    return new Promise((changinColor) => {
       setInterval(changinColor(count), 1000);
     });
   }

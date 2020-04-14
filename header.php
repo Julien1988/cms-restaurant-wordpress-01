@@ -35,7 +35,7 @@
             <?php
             $defaults = array(
                 'menu' => '',
-                'menu_class' => 'header__nav desktop-view',
+                'menu_class' => 'header__nav desktop-view menu-desktop-view',
                 'menu_id' => '',
                 'container' => false,
                 'container_class' => '',
