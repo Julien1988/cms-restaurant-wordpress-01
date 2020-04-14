@@ -256,92 +256,12 @@
         <img src="assets/images/hachures-noires.png" alt="" class="main-front-page__section-banner__image main-front-page__section-banner__image-bottom" />
     </section>
 
-    <section class="main-front-page__section main-front-page__section-06">
-        <h1 class="main-front-page__section-06__title">Last updated</h1>
-        <h2 class="main-front-page__section-06__subtitle">Recpipes blog</h2>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-    </section>
+    <!-- Boucle des articles -->
+
+    <?php
+
+    get_template_part('template-part/content/blog-liste');
+
+    ?>
+
 </main>
