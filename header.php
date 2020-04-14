@@ -32,13 +32,45 @@
             <h1 class="header__nav__title">
                 <a href="#" class="header__nav__title__link"><?php bloginfo('title'); ?></a>
             </h1>
-            <a class="header__burger-menu__list__item__link" href="#"><i class="fas fa-home"></i></a>
+            <?php
+            $defaults = array(
+                'menu' => '',
+                'menu_class' => 'header__nav desktop-view',
+                'menu_id' => '',
+                'container' => false,
+                'container_class' => '',
+                'fallback_cb' => 'wp_page_menu',
+                'beffore' => '',
+                'after' => '',
+                'link_before' => '',
+                'link_after' => '',
+                'echo' => true,
+                'depth' => 0,
+                'walker' => '',
+                'theme_location' => '',
+                'item_wrap' => '<a class="header__burger-menu__list__item__link" href="#">Ours restaurants</a>',
+                'item_spacing' => 'preserve',
+            );
+
+
+            wp_nav_menu($defaults);
+
+            ?>
+            <style>
+                .header,
+                .desktop-view {
+                    padding-left: 0em !important;
+                    padding-right: 0em !important;
+                    margin-top: 0em !important;
+                }
+            </style>
+            <!-- <a class="header__burger-menu__list__item__link" href="#"><i class="fas fa-home"></i></a>
             <a class="header__burger-menu__list__item__link" href="#">Ours restaurants</a>
             <a class="header__burger-menu__list__item__link" href="#">Menu</a>
             <a class="header__burger-menu__list__item__link" href="#">Recipes</a>
             <a class="header__burger-menu__list__item__link" href="#">Reservations</a>
             <a class="header__burger-menu__list__item__link primary-button" href="#">Order</a>
-            <a class="header__burger-menu__list__item__link" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a class="header__burger-menu__list__item__link" href="#"><i class="fas fa-shopping-cart"></i></a> -->
         </nav>
         <!-- END -->
         <div class="header__container">
