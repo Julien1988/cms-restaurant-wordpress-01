@@ -34,7 +34,7 @@
             </h1>
             <?php
             $defaults = array(
-                'menu' => '',
+                'menu' => 'Principal',
                 'menu_class' => 'header__nav desktop-view menu-desktop-view',
                 'menu_id' => '',
                 'container' => false,

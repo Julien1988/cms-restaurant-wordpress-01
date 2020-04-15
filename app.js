@@ -6,9 +6,9 @@
   let getWpNavList = document.querySelector(".menu-desktop-view");
 
   let getWpNavListChildes = getWpNavList.children;
-  console.log(getWpNavList);
-  console.log(getWpNavListChildes.length);
-  console.log(getWpNavListChildes[0]);
+  // console.log(getWpNavList);
+  // console.log(getWpNavListChildes.length);
+  // console.log(getWpNavListChildes[0]);
 
   let arrayElement = [];
 

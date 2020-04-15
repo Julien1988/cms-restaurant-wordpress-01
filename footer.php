@@ -28,7 +28,31 @@
                 through the valley of darkness, for he is truly his brother's keeper
                 and the finder of lost children.
             </p>
-            <ul class="footer__section-02__container__list">
+            <?php
+
+            $defaults = array(
+                'menu' => 'Menu des liens de réseaux sociaux',
+                'menu_class' => 'footer__section-02__container__list',
+                'menu_id' => '',
+                'container' => false,
+                'container_class' => '',
+                'fallback_cb' => 'wp_page_menu',
+                'beffore' => '',
+                'after' => '',
+                'link_before' => '',
+                'link_after' => '',
+                'echo' => true,
+                'depth' => 0,
+                'walker' => '',
+                'theme_location' => 'secondary',
+                'item_wrap' => '<a href="#" class="footer__section-02__container__list__item__link">',
+                'item_spacing' => 'preserve',
+            );
+
+            // the_field('images-social-footer-01')
+            wp_nav_menu($defaults);
+            ?>
+            <!-- <ul class="footer__section-02__container__list">
                 <li class="footer__section-02__container__list__item">
                     <a href="#" class="footer__section-02__container__list__item__link facebook-icone"><img src="assets/svg/facebook.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
                     </a>
@@ -45,7 +69,7 @@
                     <a href="#" class="footer__section-02__container__list__item__link linkedin-icone"><img src="assets/svg/linkedin.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <div class="footer__section-02__container">
             <h2 class="footer__section-02__container__subtitle">Open Hours</h2>
