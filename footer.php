@@ -28,31 +28,7 @@
                 through the valley of darkness, for he is truly his brother's keeper
                 and the finder of lost children.
             </p>
-            <?php
 
-            // $defaults = array(
-
-            //     'menu' => 'Menu des liens de réseaux sociaux',
-            //     'menu_class' => 'footer__section-02__container__list',
-            //     'menu_id' => '',
-            //     'container' => false,
-            //     'container_class' => '',
-            //     'fallback_cb' => 'wp_page_menu',
-            //     'beffore' => '',
-            //     'after' => '',
-            //     'link_before' => '',
-            //     'link_after' => '',
-            //     'echo' => true,
-            //     'depth' => 0,
-            //     'walker' => '',
-            //     'theme_location' => 'secondary',
-            //     'item_wrap' => '<a href="#" class="footer__section-02__container__list__item__link">',
-            //     'item_spacing' => 'preserve',
-            // );
-
-
-            // wp_nav_menu($defaults);
-            ?>
             <ul class="footer__section-02__container__list">
                 <?php
                 $args = array(
@@ -83,7 +59,33 @@
             </ul>
         </div>
         <div class="footer__section-02__container">
-            <h2 class="footer__section-02__container__subtitle">Open Hours</h2>
+            <?php
+            $args = array(
+                'post_type' => 'horaire',
+                'post_status' => 'publish',
+                'posts_per_page' => 10,
+                'orderby' => 'title',
+                'order' => 'ASC',
+
+
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+                while ($query->have_posts()) :
+                    $query->the_post();
+
+                    get_template_part('template-part/content/horaire-liste');
+
+
+                endwhile;
+            endif;
+
+            wp_reset_postdata();
+
+            ?>
+            <!-- <h2 class="footer__section-02__container__subtitle">Open Hours</h2>
             <div class="footer__section-02__container__content-box">
                 <i class="footer__section-02__container__content-box__icone far fa-clock"></i>
                 <p class="footer__section-02__container__content-box__text">
@@ -123,7 +125,7 @@
                 <p class="footer__section-02__container__content-box__text">
                     7an - 1am
                 </p>
-            </div>
+            </div> -->
         </div>
         <div class="footer__section-02__container">
             <h2 class="footer__section-02__container__subtitle">Contact Us</h2>

@@ -58,3 +58,43 @@ register_post_type(
         'taxonomies' => array('catégory', 'post_tag')
     )
 );
+
+// New post type : Social
+
+register_post_type(
+    'footer-info',
+    array(
+        'labels' => array('name' => __('Footer-infos')),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+
+        ),
+        'taxonomies' => array('catégory', 'post_tag')
+    )
+);
+
+// New post type : Horaire
+
+register_post_type(
+    'horaire',
+    array(
+        'labels' => array('name' => __('Horaires')),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+
+        ),
+        'taxonomies' => array('catégory', 'post_tag')
+    )
+);
