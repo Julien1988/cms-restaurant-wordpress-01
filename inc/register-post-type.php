@@ -38,3 +38,23 @@ register_post_type(
         'taxonomies' => array('catégory', 'post_tag')
     )
 );
+
+// New post type : Social
+
+register_post_type(
+    'social',
+    array(
+        'labels' => array('name' => __('Socials')),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+
+        ),
+        'taxonomies' => array('catégory', 'post_tag')
+    )
+);

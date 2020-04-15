@@ -30,46 +30,57 @@
             </p>
             <?php
 
-            $defaults = array(
-                'menu' => 'Menu des liens de réseaux sociaux',
-                'menu_class' => 'footer__section-02__container__list',
-                'menu_id' => '',
-                'container' => false,
-                'container_class' => '',
-                'fallback_cb' => 'wp_page_menu',
-                'beffore' => '',
-                'after' => '',
-                'link_before' => '',
-                'link_after' => '',
-                'echo' => true,
-                'depth' => 0,
-                'walker' => '',
-                'theme_location' => 'secondary',
-                'item_wrap' => '<a href="#" class="footer__section-02__container__list__item__link">',
-                'item_spacing' => 'preserve',
-            );
+            // $defaults = array(
 
-            // the_field('images-social-footer-01')
-            wp_nav_menu($defaults);
+            //     'menu' => 'Menu des liens de réseaux sociaux',
+            //     'menu_class' => 'footer__section-02__container__list',
+            //     'menu_id' => '',
+            //     'container' => false,
+            //     'container_class' => '',
+            //     'fallback_cb' => 'wp_page_menu',
+            //     'beffore' => '',
+            //     'after' => '',
+            //     'link_before' => '',
+            //     'link_after' => '',
+            //     'echo' => true,
+            //     'depth' => 0,
+            //     'walker' => '',
+            //     'theme_location' => 'secondary',
+            //     'item_wrap' => '<a href="#" class="footer__section-02__container__list__item__link">',
+            //     'item_spacing' => 'preserve',
+            // );
+
+
+            // wp_nav_menu($defaults);
             ?>
-            <!-- <ul class="footer__section-02__container__list">
-                <li class="footer__section-02__container__list__item">
-                    <a href="#" class="footer__section-02__container__list__item__link facebook-icone"><img src="assets/svg/facebook.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
-                    </a>
-                </li>
-                <li class="footer__section-02__container__list__item">
-                    <a href="#" class="footer__section-02__container__list__item__link twitter-icone"><img src="assets/svg/twitter.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
-                    </a>
-                </li>
-                <li class="footer__section-02__container__list__item">
-                    <a href="#" class="footer__section-02__container__list__item__link instagram-icone"><img src="assets/svg/instagram.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
-                    </a>
-                </li>
-                <li class="footer__section-02__container__list__item">
-                    <a href="#" class="footer__section-02__container__list__item__link linkedin-icone"><img src="assets/svg/linkedin.svg" alt="" class="footer__section-02__container__list__item__link__icone" />
-                    </a>
-                </li>
-            </ul> -->
+            <ul class="footer__section-02__container__list">
+                <?php
+                $args = array(
+                    'post_type' => 'social',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 10,
+                    'orderby' => 'title',
+                    'order' => 'ASC',
+
+
+                );
+
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) :
+                        $query->the_post();
+
+                        get_template_part('template-part/content/social-liste');
+
+
+                    endwhile;
+                endif;
+
+                wp_reset_postdata();
+
+                ?>
+            </ul>
         </div>
         <div class="footer__section-02__container">
             <h2 class="footer__section-02__container__subtitle">Open Hours</h2>
