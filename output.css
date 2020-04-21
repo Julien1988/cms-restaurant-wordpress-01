@@ -1034,8 +1034,8 @@ body {
   .main-post-type__section-01__container {
     display: flex;
     justify-content: center;
-    width: 50%;
-    transform: translateX(50%);
+    margin-left: 4em;
+    margin-right: 4em;
     border: 1px solid black;
   }
   .main-post-type__section-01__container img {
@@ -1055,8 +1055,8 @@ body {
     margin-top: initial;
   }
   .main-post-type__section-01__container__content-box p {
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 10em;
   }
   .main-post-type__section-02__title {

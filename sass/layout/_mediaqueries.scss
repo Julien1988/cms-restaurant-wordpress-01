@@ -538,10 +538,12 @@
         display: flex;
 
         justify-content: center;
-        $width-ratio: 50%;
-        width: $width-ratio;
+        // $width-ratio: 50%;
+        // width: $width-ratio;
 
-        transform: translateX(100% - $width-ratio);
+        // transform: translateX(100% - $width-ratio);
+        margin-left: $gutter-large * 2;
+        margin-right: $gutter-large * 2;
 
         border: 1px solid black;
 
@@ -565,8 +567,8 @@
           }
 
           p {
-            padding-left: $gutter-large * 3;
-            padding-right: $gutter-large * 3;
+            padding-left: $gutter-large;
+            padding-right: $gutter-large;
             padding-bottom: $gutter-large * 5;
           }
         }
