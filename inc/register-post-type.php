@@ -98,3 +98,23 @@ register_post_type(
         'taxonomies' => array('catégory', 'post_tag')
     )
 );
+
+// New post type : Horaire
+
+register_post_type(
+    'contact',
+    array(
+        'labels' => array('name' => __('Contactes')),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'author',
+            'thumbnail',
+            'excerpt',
+
+        ),
+        'taxonomies' => array('catégory', 'post_tag')
+    )
+);

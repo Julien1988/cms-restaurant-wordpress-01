@@ -1073,7 +1073,6 @@ body {
     margin-bottom: 4em !important;
   }
   .main-post-type__section-03__container {
-    display: grid;
     grid-template-columns: repeat(20, 9.5em);
     grid-template-rows: repeat(20, 3em);
     margin-bottom: 12em;

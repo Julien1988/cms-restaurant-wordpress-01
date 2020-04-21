@@ -128,7 +128,34 @@
             </div> -->
         </div>
         <div class="footer__section-02__container">
-            <h2 class="footer__section-02__container__subtitle">Contact Us</h2>
+
+            <?php
+            $args = array(
+                'post_type' => 'contact',
+                'post_status' => 'publish',
+                'posts_per_page' => 10,
+                'orderby' => 'title',
+                'order' => 'ASC',
+
+
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) :
+                while ($query->have_posts()) :
+                    $query->the_post();
+
+                    get_template_part('template-part/content/contact-liste');
+
+
+                endwhile;
+            endif;
+
+            wp_reset_postdata();
+
+            ?>
+            <!-- <h2 class="footer__section-02__container__subtitle">Contact Us</h2>
             <div class="footer__section-02__container__content-box footer__section-02__container__content-box-contact">
                 <i class="footer__section-02__container__content-box__icone fas fa-phone"></i>
                 <a href="tel:123-465-7890" class="footer__section-02__container__content-box__link">+ 1 (123) xxx-xxxx</a>
@@ -145,7 +172,7 @@
                 <i class="footer__section-02__container__content-box__icone fas fa-envelope"></i>
                 <a href="email:0devdesign.studio@gmail.com" class="footer__section-02__container__content-box__link">
                     0devdesign.studio@gmail.com</a>
-            </div>
+            </div> -->
         </div>
         <div class="footer__section-02__container">
             <h2 class="footer__section-02__container__subtitle">Instagrame</h2>

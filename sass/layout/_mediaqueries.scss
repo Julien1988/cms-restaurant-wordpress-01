@@ -591,7 +591,7 @@
         margin-bottom: $gutter-large * 2 !important;
       }
       &__container {
-        display: grid;
+        // display: grid;
         grid-template-columns: repeat(20, 9.5em);
         grid-template-rows: repeat(20, 3em);
         margin-bottom: $gutter-large * 6;
