@@ -5,51 +5,20 @@ Template Name: page-post
 
 get_header();
 ?>
+
+
 <main class="main-front-page main main-post-type">
     <img src="assets/images/hachures-blanches.png" alt="" class="main-post-type__image" />
     <section class="main-post-type__section main-post-type__section-01">
-        <h1 class="main-post-type__section-01__title">Welcome</h1>
-        <h2 class="main-post-type__section-01__subtitle">Presentation</h2>
-        <div class="main-post-type__section-01__container">
-            <img src="assets/images/resto1.jpg" alt="" class="main-post-type__section-01__container__image" />
-            <div class="main-post-type__section-01__container__content-box">
-                <h3 class="main-post-type__section-01__container__content-box__title">
-                    Our original restaurant
-                </h3>
-                <h4 class="main-post-type__section-01__container__content-box__subtitle">
-                    The chef's cafeteria
-                </h4>
-                <p class="main-post-type__section-01__container__content-box__text">
-                    Do you see any Teletubbies in here? Do you see a slender plastic
-                    tag clipped to my shirt with my name printed on it? Do you see a
-                    little Asian child with a blank expression on his face sitting
-                    outside on a mechanical helicopter that shakes when you put
-                    quarters in it? No? Well, that's what you see at a toy store. And
-                    you must think you're in a toy store, because you're here shopping
-                    for an infant named Jeb.
-                </p>
-            </div>
-        </div>
-        <div class="main-post-type__section-01__container">
-            <img src="assets/images/resto2.jpg" alt="" class="main-post-type__section-01__container__image" />
-            <div class="main-post-type__section-01__container__content-box">
-                <h3 class="main-post-type__section-01__container__content-box__title">
-                    Our original restaurant
-                </h3>
-                <h4 class="main-post-type__section-01__container__content-box__subtitle">
-                    The chef's cafeteria
-                </h4>
-                <p class="main-post-type__section-01__container__content-box__text">
-                    Do you see any Teletubbies in here? Do you see a slender plastic
-                    tag clipped to my shirt with my name printed on it? Do you see a
-                    little Asian child with a blank expression on his face sitting
-                    outside on a mechanical helicopter that shakes when you put
-                    quarters in it? No? Well, that's what you see at a toy store. And
-                    you must think you're in a toy store, because you're here shopping
-                    for an infant named Jeb.
-                </p>
-            </div>
-        </div>
+        <?php
+
+
+        get_template_part('template-part/content/post-type');
+
+
+
+        ?>
+
     </section>
     <section class="main-post-type__section main-post-type__section-02">
         <h1 class="main-post-type__section-02__title">Find Us</h1>
