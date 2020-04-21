@@ -21,9 +21,14 @@ get_header();
 
     </section>
     <section class="main-post-type__section main-post-type__section-02">
-        <h1 class="main-post-type__section-02__title">Find Us</h1>
-        <h2 class="main-post-type__section-02__subtitle">Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.6813219788114!2d5.58462641602951!3d50.63303657950092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f118d22c1b85%3A0x47f4b33cb5f3e2bf!2sBeCode%20Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1585734178090!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <?php
+
+
+        get_template_part('template-part/content/map-layout');
+
+
+
+        ?>
     </section>
     <section class="main-post-type__section main-post-type__section-03">
         <h1 class="main-post-type__section-03__title">
@@ -92,125 +97,28 @@ get_header();
             </form>
         </div>
     </section>
-    <section class="main-post-type__section main-post-type__section-04">
-        <div class="main-post-type__section-04__container">
-            <h1 class="main-post-type__section-04__container__title">
-                Let's discover food
-            </h1>
-            <h2 class="main-post-type__section-04__container__subtitle">
-                Discover our menu
-            </h2>
-            <p class="main-post-type__section-04__container__text">
-                Well, the way they make shows is, they make one show. That show's
-                called a pilot. Then they show that show to the people who make
-                shows, and on the strength of that one show they decide if they're
-                going to make more shows. Some pilots get picked and become
-                television programs. Some don't, become nothing. She starred in one
-                of the ones that became nothing.
-            </p>
-            <a href="#" class="main-post-type__section-04__container__link link-button-order">
-                <button class="main-post-type__section-04__container__link__button button-view-all">
-                    View the full menu
-                </button>
-            </a>
-        </div>
+    <section class="main-front-page__section main-front-page__section-05 hide-on-mobile-view desktop-view">
 
-        <!-- Hide on mobile view -->
-        <div class="main-post-type__section-04__container hide-on-mobile-view desktop-view">
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-post-type__section-04__container__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-post-type__section-04__container__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-post-type__section-04__container__image" />
-            <img src="assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="" class="main-post-type__section-04__container__image" />
-        </div>
+        <?php
+
+
+        get_template_part('template-part/content/menu-layout');
+
+
+        ?>
+
+
+
     </section>
-    <section class="main-front-page__section main-front-page__section-06">
-        <h1 class="main-front-page__section-06__title">Last updated</h1>
-        <h2 class="main-front-page__section-06__subtitle">Recpipes blog</h2>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-        <article class="main-front-page__section-06__article">
-            <a href="#" class="main-front-page__section-06__article__link">
-                <img src="assets/images/the-chef.jpg" alt="" class="main-front-page__section-06__article__link__image" />
-            </a>
-            <div class="main-front-page__section-06__article__content-box">
-                <i class="main-front-page__section-06__article__content-box__icone far fa-clock"></i>
-                <p class="main-front-page__section-06__article__content-box__date">
-                    OCTOBER 4, 2018
-                </p>
-            </div>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <h3 class="main-front-page__section-06__article__content-box__link__title">
-                    Fluffy Japaness Pancakes
-                </h3>
-            </a>
-            <p class="main-front-page__section-06__article__content-box__text">
-                My money's in that office, right? If she start giving me some
-                bullshit about it ain't there, and we got to go someplace else and
-                get it, I'm gonna shoot you in the head then and there.
-            </p>
-            <a href="#" class="main-front-page__section-06__article__content-box__link">
-                <butoon class="main-front-page__section-06__article__content-box__link__button">
-                    <span>
-                        . . . . . . . . . . . . . . . . . . . . . . .
-                    </span>
-                    Read More</butoon>
-            </a>
-        </article>
-    </section>
+
+    <!-- Boucle des articles -->
+
+    <?php
+
+    get_template_part('template-part/content/blog-liste');
+
+    ?>
+
 </main>
 <?php
 get_footer();

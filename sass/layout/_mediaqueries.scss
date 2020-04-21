@@ -465,12 +465,20 @@
       }
     }
 
-    &__section-05 {
-      display: flex;
+    &__section-05,
+    .desktop-view {
+      display: flex !important;
+      //flex-direction: row !important;
       justify-content: center;
       align-items: center;
-      padding-top: $gutter-large * 2;
+      //padding-top: $gutter-large * 2;
       padding-bottom: $gutter-large * 2;
+
+      h1,
+      h2 {
+        padding-bottom: initial !important;
+      }
+
       .container-desktop-view {
         //background-color: green;
         width: 35%;
