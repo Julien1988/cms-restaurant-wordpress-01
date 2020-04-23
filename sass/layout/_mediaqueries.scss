@@ -356,6 +356,20 @@
   // Front page
 
   .main-front-page {
+    // Formulaire de reservation
+
+    .rtb-booking-form-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      fieldset {
+        width: 40%;
+      }
+      button {
+        margin-left: $gutter-large;
+      }
+    }
     &__section-top {
       display: flex;
       flex-wrap: nowrap;
@@ -613,37 +627,37 @@
           grid-row-end: 20;
         }
 
-        form {
-          z-index: 2;
-          grid-column-start: 9;
-          grid-column-end: 15;
-          grid-row-start: 3;
-          grid-row-end: 18;
-          background-color: #eeeeee;
+        // form {
+        //   z-index: 2;
+        //   grid-column-start: 9;
+        //   grid-column-end: 15;
+        //   grid-row-start: 3;
+        //   grid-row-end: 18;
+        //   background-color: #eeeeee;
 
-          padding-top: $gutter-large;
+        //   padding-top: $gutter-large;
 
-          display: flex;
-          flex-wrap: wrap;
+        //   display: flex;
+        //   flex-wrap: wrap;
 
-          div {
-            background-color: #eeeeee;
-            width: 35%;
-            padding-left: 7em !important;
-          }
+        //   div {
+        //     background-color: #eeeeee;
+        //     width: 35%;
+        //     padding-left: 7em !important;
+        //   }
 
-          .form-group-text-message {
-            width: 80%;
-          }
+        //   .form-group-text-message {
+        //     width: 80%;
+        //   }
 
-          .form-group-button {
-            margin-bottom: $gutter-large;
-            button {
-              height: 100%;
-              font-size: 1.5em;
-            }
-          }
-        }
+        //   .form-group-button {
+        //     margin-bottom: $gutter-large;
+        //     button {
+        //       height: 100%;
+        //       font-size: 1.5em;
+        //     }
+        //   }
+        // }
       }
     }
 

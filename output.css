@@ -412,6 +412,10 @@ body {
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.rtb-booking-form-form {
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 .header {
   background-image: url(assets/images/banner-top.jpg);
   background-size: cover;
@@ -885,6 +889,17 @@ body {
     width: 15%;
   }
 
+  .main-front-page .rtb-booking-form-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-front-page .rtb-booking-form-form fieldset {
+    width: 40%;
+  }
+  .main-front-page .rtb-booking-form-form button {
+    margin-left: 2em;
+  }
   .main-front-page__section-top {
     display: flex;
     flex-wrap: nowrap;
@@ -1092,32 +1107,6 @@ body {
     grid-column-end: 12;
     grid-row-start: 1;
     grid-row-end: 20;
-  }
-  .main-post-type__section-03__container form {
-    z-index: 2;
-    grid-column-start: 9;
-    grid-column-end: 15;
-    grid-row-start: 3;
-    grid-row-end: 18;
-    background-color: #eeeeee;
-    padding-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .main-post-type__section-03__container form div {
-    background-color: #eeeeee;
-    width: 35%;
-    padding-left: 7em !important;
-  }
-  .main-post-type__section-03__container form .form-group-text-message {
-    width: 80%;
-  }
-  .main-post-type__section-03__container form .form-group-button {
-    margin-bottom: 2em;
-  }
-  .main-post-type__section-03__container form .form-group-button button {
-    height: 100%;
-    font-size: 1.5em;
   }
   .main-post-type__section-04 {
     display: flex;
@@ -1585,6 +1574,13 @@ main .link-button-view-all :hover {
 }
 .main-post-type__section-04 .hide-on-mobile-view {
   display: none;
+}
+.main-post-type .rtb-booking-form-form button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1em;
 }
 
 .main-menu-page__title {

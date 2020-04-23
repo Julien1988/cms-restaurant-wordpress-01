@@ -105,4 +105,14 @@
     }
   }
   padding-bottom: $gutter-large * 2;
+
+  .rtb-booking-form-form {
+    button {
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: $gutter;
+    }
+  }
 }
