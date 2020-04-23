@@ -35,7 +35,33 @@ get_header();
             Submit information to Place Order
         </h1>
         <h2 class="main-post-type__section-03__subtitle">Reserve a table</h2>
-        <div class="main-post-type__section-03__container">
+        <?php
+        $args = array(
+            'post_type' => 'page',
+            'post_status' => 'publish',
+            'posts_per_page' => 10,
+            'orderby' => 'title',
+            'order' => 'ASC'
+
+
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) :
+            while ($query->have_posts()) :
+                $query->the_post();
+
+                get_template_part('template-part/content/reservation-layout');
+
+
+            endwhile;
+        endif;
+
+        wp_reset_postdata();
+        ?>
+
+        <!-- <div class="main-post-type__section-03__container">
             <img src="assets/images/resto3.jpg" alt="" class="main-post-type__section-03__container__image" />
             <form action="#" method="POST" class="main-post-type__section-03__container__form link-button-order">
                 <div class="main-post-type__section-03__container__form__form-group form-group-name">
@@ -95,7 +121,7 @@ get_header();
                     </button>
                 </div>
             </form>
-        </div>
+        </div> -->
     </section>
     <section class="main-front-page__section main-front-page__section-05 hide-on-mobile-view desktop-view">
 
